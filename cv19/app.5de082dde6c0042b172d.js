@@ -1,421 +1,65 @@
-webpackJsonp([1],[
-/* 0 */,
-/* 1 */,
-/* 2 */,
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */
+webpackJsonp([1],{
+
+/***/ 18:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 const URL = "https://cv19.app:8446/app";
 /* harmony export (immutable) */ __webpack_exports__["a"] = URL;
 
-// export const URL = "http://localhost:5000/app"
+// export const URL = "http://127.0.0.1:5000"
 const FORM_ID = "1";
 /* harmony export (immutable) */ __webpack_exports__["b"] = FORM_ID;
 
 
 /***/ }),
-/* 18 */,
-/* 19 */,
-/* 20 */,
-/* 21 */,
-/* 22 */,
-/* 23 */,
-/* 24 */,
-/* 25 */,
-/* 26 */,
-/* 27 */,
-/* 28 */,
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */,
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */
-/***/ (function(module, exports, __webpack_require__) {
 
-var Component = __webpack_require__(11)(
-  /* script */
-  __webpack_require__(326),
-  /* template */
-  __webpack_require__(433),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 53 */
+/***/ 279:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(38);
-
-
-
-__WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_1_vuex__["b" /* default */]);
-
-/* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vuex__["b" /* default */].Store({
-  state: {
-    user: {
-      loggedIn: false,
-      data: null
-    }
-  },
-
-  getters: {
-    user(state) {
-      return state.user;
-    }
-  },
-  mutations: {
-    SET_LOGGED_IN(state, value) {
-      state.user.loggedIn = value;
-    },
-    SET_USER(state, data) {
-      state.user.data = data;
-    }
-  },
-  actions: {
-    fetchUser({ commit }, user) {
-      commit("SET_LOGGED_IN", user !== null);
-
-      if (user) {
-        commit("SET_USER", {
-          displayName: user.name,
-          email: user.email,
-          user_id: user.id,
-          phone: user.phone,
-          birthday: user.birthday,
-          answer: user.answer
-        });
-      } else {
-        commit("SET_USER", null);
-      }
-    }
-  }
-}));
-
-/***/ }),
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */,
-/* 59 */,
-/* 60 */,
-/* 61 */,
-/* 62 */,
-/* 63 */,
-/* 64 */,
-/* 65 */,
-/* 66 */,
-/* 67 */,
-/* 68 */,
-/* 69 */,
-/* 70 */,
-/* 71 */,
-/* 72 */,
-/* 73 */,
-/* 74 */,
-/* 75 */,
-/* 76 */,
-/* 77 */,
-/* 78 */,
-/* 79 */,
-/* 80 */,
-/* 81 */,
-/* 82 */,
-/* 83 */,
-/* 84 */,
-/* 85 */,
-/* 86 */,
-/* 87 */,
-/* 88 */,
-/* 89 */,
-/* 90 */,
-/* 91 */,
-/* 92 */,
-/* 93 */,
-/* 94 */,
-/* 95 */,
-/* 96 */,
-/* 97 */,
-/* 98 */,
-/* 99 */,
-/* 100 */,
-/* 101 */,
-/* 102 */,
-/* 103 */,
-/* 104 */,
-/* 105 */,
-/* 106 */,
-/* 107 */,
-/* 108 */,
-/* 109 */,
-/* 110 */,
-/* 111 */,
-/* 112 */,
-/* 113 */,
-/* 114 */,
-/* 115 */,
-/* 116 */,
-/* 117 */,
-/* 118 */,
-/* 119 */,
-/* 120 */,
-/* 121 */,
-/* 122 */,
-/* 123 */,
-/* 124 */,
-/* 125 */,
-/* 126 */,
-/* 127 */,
-/* 128 */,
-/* 129 */,
-/* 130 */,
-/* 131 */,
-/* 132 */,
-/* 133 */,
-/* 134 */,
-/* 135 */,
-/* 136 */,
-/* 137 */,
-/* 138 */,
-/* 139 */,
-/* 140 */,
-/* 141 */,
-/* 142 */,
-/* 143 */,
-/* 144 */,
-/* 145 */,
-/* 146 */,
-/* 147 */,
-/* 148 */,
-/* 149 */,
-/* 150 */,
-/* 151 */,
-/* 152 */,
-/* 153 */,
-/* 154 */,
-/* 155 */,
-/* 156 */,
-/* 157 */,
-/* 158 */,
-/* 159 */,
-/* 160 */,
-/* 161 */,
-/* 162 */,
-/* 163 */,
-/* 164 */,
-/* 165 */,
-/* 166 */,
-/* 167 */,
-/* 168 */,
-/* 169 */,
-/* 170 */,
-/* 171 */,
-/* 172 */,
-/* 173 */,
-/* 174 */,
-/* 175 */,
-/* 176 */,
-/* 177 */,
-/* 178 */,
-/* 179 */,
-/* 180 */,
-/* 181 */,
-/* 182 */,
-/* 183 */,
-/* 184 */,
-/* 185 */,
-/* 186 */,
-/* 187 */,
-/* 188 */,
-/* 189 */,
-/* 190 */,
-/* 191 */,
-/* 192 */,
-/* 193 */,
-/* 194 */,
-/* 195 */,
-/* 196 */,
-/* 197 */,
-/* 198 */,
-/* 199 */,
-/* 200 */,
-/* 201 */,
-/* 202 */,
-/* 203 */,
-/* 204 */,
-/* 205 */,
-/* 206 */,
-/* 207 */,
-/* 208 */,
-/* 209 */,
-/* 210 */,
-/* 211 */,
-/* 212 */,
-/* 213 */,
-/* 214 */,
-/* 215 */,
-/* 216 */,
-/* 217 */,
-/* 218 */,
-/* 219 */,
-/* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */,
-/* 240 */,
-/* 241 */,
-/* 242 */,
-/* 243 */,
-/* 244 */,
-/* 245 */,
-/* 246 */,
-/* 247 */,
-/* 248 */,
-/* 249 */,
-/* 250 */,
-/* 251 */,
-/* 252 */,
-/* 253 */,
-/* 254 */,
-/* 255 */,
-/* 256 */,
-/* 257 */,
-/* 258 */,
-/* 259 */,
-/* 260 */,
-/* 261 */,
-/* 262 */,
-/* 263 */,
-/* 264 */,
-/* 265 */,
-/* 266 */,
-/* 267 */,
-/* 268 */,
-/* 269 */,
-/* 270 */,
-/* 271 */,
-/* 272 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 273 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 274 */,
-/* 275 */,
-/* 276 */,
-/* 277 */,
-/* 278 */,
-/* 279 */,
-/* 280 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(434);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_newCreate_survey__ = __webpack_require__(406);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(436);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_newCreate_survey__ = __webpack_require__(408);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_newCreate_survey___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__pages_newCreate_survey__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_view_survey__ = __webpack_require__(408);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_view_survey__ = __webpack_require__(410);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_view_survey___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__pages_view_survey__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_save_survey__ = __webpack_require__(407);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_save_survey__ = __webpack_require__(409);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_save_survey___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__pages_save_survey__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_TwilioEX__ = __webpack_require__(405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_TwilioEX__ = __webpack_require__(407);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_TwilioEX___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__pages_TwilioEX__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vue_resource__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_Layout_HomePage__ = __webpack_require__(387);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vue_resource__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_Layout_HomePage__ = __webpack_require__(389);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_Layout_HomePage___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_Layout_HomePage__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_clinic_all_clinic__ = __webpack_require__(397);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_clinic_all_clinic__ = __webpack_require__(399);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_clinic_all_clinic___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_clinic_all_clinic__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_form_all_form__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_form_all_form__ = __webpack_require__(403);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_form_all_form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_form_all_form__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_form_create_form__ = __webpack_require__(402);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_form_create_form__ = __webpack_require__(404);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_form_create_form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_form_create_form__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_clinic_create_clinic__ = __webpack_require__(398);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_clinic_create_clinic__ = __webpack_require__(400);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_clinic_create_clinic___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__components_clinic_create_clinic__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_clinic_edit_clinic__ = __webpack_require__(400);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_clinic_edit_clinic__ = __webpack_require__(402);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_clinic_edit_clinic___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__components_clinic_edit_clinic__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_clinic_delete_clinic__ = __webpack_require__(399);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_clinic_delete_clinic__ = __webpack_require__(401);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_clinic_delete_clinic___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__components_clinic_delete_clinic__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_authentication_Login__ = __webpack_require__(393);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_authentication_Login__ = __webpack_require__(394);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_authentication_Login___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__components_authentication_Login__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_authentication_Register__ = __webpack_require__(395);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_authentication_Register__ = __webpack_require__(396);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_authentication_Register___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__components_authentication_Register__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_authentication_RegisterPhone__ = __webpack_require__(396);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_authentication_RegisterPhone__ = __webpack_require__(397);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_authentication_RegisterPhone___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__components_authentication_RegisterPhone__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_authentication_Dashboard__ = __webpack_require__(390);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_authentication_Dashboard__ = __webpack_require__(392);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_authentication_Dashboard___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__components_authentication_Dashboard__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_authentication_Disclamer__ = __webpack_require__(391);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_authentication_Disclamer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__components_authentication_Disclamer__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_authentication_DoctorApprove__ = __webpack_require__(392);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_authentication_disclamer__ = __webpack_require__(398);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_authentication_disclamer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__components_authentication_disclamer__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_authentication_DoctorApprove__ = __webpack_require__(393);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_authentication_DoctorApprove___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19__components_authentication_DoctorApprove__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_user_all_doctors__ = __webpack_require__(403);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_user_all_doctors__ = __webpack_require__(405);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_user_all_doctors___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20__components_user_all_doctors__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_user_delete_doctor__ = __webpack_require__(404);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_user_delete_doctor__ = __webpack_require__(406);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_user_delete_doctor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21__components_user_delete_doctor__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_Layout_layout__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_Layout_layout__ = __webpack_require__(391);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_Layout_layout___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_22__components_Layout_layout__);
 
 
@@ -509,7 +153,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_6_vue
     }, {
       path: '/disclamer',
       name: 'Disclamer',
-      component: __WEBPACK_IMPORTED_MODULE_18__components_authentication_Disclamer___default.a
+      component: __WEBPACK_IMPORTED_MODULE_18__components_authentication_disclamer___default.a
     },
     // {
     //   path: '/newViewSurvey',
@@ -538,19 +182,19 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_6_vue
 }));
 
 /***/ }),
-/* 281 */,
-/* 282 */
+
+/***/ 281:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(369)
+__webpack_require__(371)
 
 var Component = __webpack_require__(11)(
   /* script */
   __webpack_require__(309),
   /* template */
-  __webpack_require__(412),
+  __webpack_require__(414),
   /* scopeId */
   null,
   /* cssModules */
@@ -561,33 +205,8 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 283 */,
-/* 284 */,
-/* 285 */,
-/* 286 */,
-/* 287 */,
-/* 288 */,
-/* 289 */,
-/* 290 */,
-/* 291 */,
-/* 292 */,
-/* 293 */,
-/* 294 */,
-/* 295 */,
-/* 296 */,
-/* 297 */,
-/* 298 */,
-/* 299 */,
-/* 300 */,
-/* 301 */,
-/* 302 */,
-/* 303 */,
-/* 304 */,
-/* 305 */,
-/* 306 */,
-/* 307 */,
-/* 308 */,
-/* 309 */
+
+/***/ 309:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -613,7 +232,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 310 */
+
+/***/ 310:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -673,12 +293,114 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 311 */
+
+/***/ 311:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__variables_js__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__variables_js__ = __webpack_require__(18);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -1059,11 +781,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 312 */
+
+/***/ 312:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
 //
 //
 //
@@ -1342,16 +1068,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 313 */
+
+/***/ 313:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Header__ = __webpack_require__(386);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Header__ = __webpack_require__(388);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Header___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Header__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__authentication_Navbar__ = __webpack_require__(394);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__authentication_Navbar__ = __webpack_require__(395);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__authentication_Navbar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__authentication_Navbar__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__footer__ = __webpack_require__(388);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__footer__ = __webpack_require__(390);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__footer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__footer__);
 //
 //
@@ -1380,7 +1107,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 314 */
+
+/***/ 314:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1413,7 +1141,8 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 });
 
 /***/ }),
-/* 315 */
+
+/***/ 315:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1454,21 +1183,46 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 });
 
 /***/ }),
-/* 316 */
+
+/***/ 316:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_firebase__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_phone_number_input__ = __webpack_require__(278);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_phone_number_input___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_phone_number_input__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_phone_number_input_dist_vue_phone_number_input_css__ = __webpack_require__(273);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_phone_number_input_dist_vue_phone_number_input_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue_phone_number_input_dist_vue_phone_number_input_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue_tel_input__ = __webpack_require__(279);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__variables__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__store__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_tel_input__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__variables__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__store__ = __webpack_require__(54);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -1571,19 +1325,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 
-
-
-
-__WEBPACK_IMPORTED_MODULE_3_vue__["default"].component("vue-phone-number-input", __WEBPACK_IMPORTED_MODULE_1_vue_phone_number_input___default.a);
+// import VuePhoneNumberInput from "vue-phone-number-input";
+// import "vue-phone-number-input/dist/vue-phone-number-input.css";
+// import Vue from "vue";
+// Vue.component("vue-phone-number-input", VuePhoneNumberInput);
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    VueTelInput: __WEBPACK_IMPORTED_MODULE_4_vue_tel_input__["a" /* VueTelInput */]
+    VueTelInput: __WEBPACK_IMPORTED_MODULE_1_vue_tel_input__["a" /* VueTelInput */]
   },
   data() {
     return {
+      showWaring: true,
       form: {
         phone: "",
         pin: "",
@@ -1591,7 +1346,6 @@ __WEBPACK_IMPORTED_MODULE_3_vue__["default"].component("vue-phone-number-input",
         code: ""
       },
       haveCode: false,
-      appVerifier: "",
       userId: -1,
       userexist: false,
       smssent: false,
@@ -1612,58 +1366,16 @@ __WEBPACK_IMPORTED_MODULE_3_vue__["default"].component("vue-phone-number-input",
       error: null
     };
   },
-  created: function () {
-    this.initReCaptcha();
-    console.log("hererere");
-    console.log(this.appVerifier);
-  },
+  created: function () {},
   methods: {
-    sendOtp() {
-      if (this.form.phone.length < 10) {
-        alert("Invalid Phone Number Format !");
-      } else {
-        //
-        let phoneNumber = this.form.phone;
-        //
-        let appVerifier = this.appVerifier;
-        //
-        __WEBPACK_IMPORTED_MODULE_0_firebase___default.a.auth().signInWithPhoneNumber(phoneNumber, appVerifier).then(function (confirmationResult) {
-          // SMS sent. Prompt user to type the code from the message, then sign the
-          // user in with confirmationResult.confirm(code).
-          window.confirmationResult = confirmationResult;
 
-          //
-          alert("SMS sent");
-        }).catch(function (error) {
-          // Error; SMS not sent
-          // ...
-          alert("Error ! SMS not sent");
-        });
-      }
-    },
     countryChanged(country) {
       this.countryCode = country.dialCode;
       console.log(country);
     },
-    initReCaptcha() {
-      setTimeout(() => {
-        let vm = this;
-        window.recaptchaVerifier = new __WEBPACK_IMPORTED_MODULE_0_firebase___default.a.auth.RecaptchaVerifier("recaptcha-container", {
-          size: "invisible",
-          callback: function (response) {
-            // reCAPTCHA solved, allow signInWithPhoneNumber.
-            // ...
-          },
-          "expired-callback": function () {
-            // Response expired. Ask user to solve reCAPTCHA again.
-            // ...
-          }
-        });
-        //
-        this.appVerifier = window.recaptchaVerifier;
-      }, 1000);
-    },
+
     verifyOtp() {
+      debugger;
       if (this.form.phone.length < 10) {
         alert("Invalid Phone Number/OTP Format !");
       } else {
@@ -1672,10 +1384,13 @@ __WEBPACK_IMPORTED_MODULE_3_vue__["default"].component("vue-phone-number-input",
         let code = this.form.otp;
         //
         window.confirmationResult.confirm(code).then(function (result) {
+          debugger;
           vm.setUserCode();
+          vm.showWaring = false;
           // ...
           //route to set password !
         }).catch(function (error) {
+          vm.showWaring = true;
           // User couldn't sign in (bad verification code?)
           // ...
         });
@@ -1688,10 +1403,10 @@ __WEBPACK_IMPORTED_MODULE_3_vue__["default"].component("vue-phone-number-input",
     setUserCode: function () {
       var formData = new FormData();
       let vm = this;
-      const axios = __webpack_require__(46).default;
+      const axios = __webpack_require__(47).default;
 
       if (this.notifications) this.notifications = [];
-      if (this.form.phone) axios.put(__WEBPACK_IMPORTED_MODULE_5__variables__["a" /* URL */] + "/user/" + vm.userId, {
+      if (this.form.phone) axios.put(__WEBPACK_IMPORTED_MODULE_2__variables__["a" /* URL */] + "/user/" + vm.userId, {
         code: this.form.otp
       }).then(response => {
         vm.login2();
@@ -1700,15 +1415,15 @@ __WEBPACK_IMPORTED_MODULE_3_vue__["default"].component("vue-phone-number-input",
     login: function () {
       var formData = new FormData();
       let vm = this;
-      const axios = __webpack_require__(46).default;
+      const axios = __webpack_require__(47).default;
       if (this.notifications) this.notifications = [];
-      axios.get(__WEBPACK_IMPORTED_MODULE_5__variables__["a" /* URL */] + "/logincode?pin=" + vm.form.pin + "&phone=" + vm.form.phone).then(response => {
+      axios.get(__WEBPACK_IMPORTED_MODULE_2__variables__["a" /* URL */] + "/logincode?pin=" + vm.form.pin + "&phone=" + vm.form.phone).then(response => {
+        debugger;
         if (response.data) {
           console.log(response);
           vm.userexist = true;
           if (response.data.code == "") {
             vm.userId = response.data.id;
-            vm.sendOtp();
             vm.haveCode = false;
           } else {
             vm.haveCode = true;
@@ -1723,12 +1438,12 @@ __WEBPACK_IMPORTED_MODULE_3_vue__["default"].component("vue-phone-number-input",
     login2: function () {
       var formData = new FormData();
       let vm = this;
-      const axios = __webpack_require__(46).default;
+      const axios = __webpack_require__(47).default;
       if (this.notifications) this.notifications = [];
-      axios.get(__WEBPACK_IMPORTED_MODULE_5__variables__["a" /* URL */] + "/login?pin=" + vm.form.pin + "&code=" + vm.form.otp + "&phone=" + vm.form.phone).then(response => {
+      axios.get(__WEBPACK_IMPORTED_MODULE_2__variables__["a" /* URL */] + "/login?pin=" + vm.form.pin + "&code=" + vm.form.otp + "&phone=" + vm.form.phone).then(response => {
         if (response.data) {
           console.log(response);
-          __WEBPACK_IMPORTED_MODULE_6__store__["a" /* default */].dispatch("fetchUser", {
+          __WEBPACK_IMPORTED_MODULE_3__store__["a" /* default */].dispatch("fetchUser", {
             id: response.data.id,
             name: response.data.name,
             email: response.data.email,
@@ -1737,7 +1452,7 @@ __WEBPACK_IMPORTED_MODULE_3_vue__["default"].component("vue-phone-number-input",
             answer: response.data.answers && response.data.answers.length > 0 ? response.data.answers[0].answer : ""
           });
           if (response.data.doctor == 0) vm.$router.push({
-            path: "/save-survey/" + __WEBPACK_IMPORTED_MODULE_5__variables__["b" /* FORM_ID */]
+            path: "/save-survey/" + __WEBPACK_IMPORTED_MODULE_2__variables__["b" /* FORM_ID */]
           });else {
             if (response.data.verify == "true") {
               vm.$router.push({
@@ -1760,17 +1475,31 @@ __WEBPACK_IMPORTED_MODULE_3_vue__["default"].component("vue-phone-number-input",
 });
 
 /***/ }),
-/* 317 */
+
+/***/ 317:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_firebase__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_firebase__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_firebase__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__store__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__store__ = __webpack_require__(54);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -1945,21 +1674,69 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 });
 
 /***/ }),
-/* 318 */
+
+/***/ 318:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_firebase__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_phone_number_input__ = __webpack_require__(278);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_phone_number_input___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_phone_number_input__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_phone_number_input_dist_vue_phone_number_input_css__ = __webpack_require__(273);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_phone_number_input_dist_vue_phone_number_input_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue_phone_number_input_dist_vue_phone_number_input_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue_tel_input__ = __webpack_require__(279);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__variables__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__store__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuejs_datepicker__ = __webpack_require__(439);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuelidate_lib_validators__ = __webpack_require__(446);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuelidate_lib_validators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vuelidate_lib_validators__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_tel_input__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__variables__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__store__ = __webpack_require__(54);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2146,20 +1923,40 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 
+//Added by Madonna
 
 
-
-__WEBPACK_IMPORTED_MODULE_3_vue__["default"].component("vue-phone-number-input", __WEBPACK_IMPORTED_MODULE_1_vue_phone_number_input___default.a);
+// import VuePhoneNumberInput from "vue-phone-number-input";
+// import "vue-phone-number-input/dist/vue-phone-number-input.css";
+// import Vue from "vue";
+// Vue.component("vue-phone-number-input", VuePhoneNumberInput);
 
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    VueTelInput: __WEBPACK_IMPORTED_MODULE_4_vue_tel_input__["a" /* VueTelInput */]
+    VueTelInput: __WEBPACK_IMPORTED_MODULE_3_vue_tel_input__["a" /* VueTelInput */],
+    Datepicker: __WEBPACK_IMPORTED_MODULE_1_vuejs_datepicker__["a" /* default */]
+  },
+  validations: {
+    form: {
+      phone: {
+        required: __WEBPACK_IMPORTED_MODULE_2_vuelidate_lib_validators__["required"]
+      },
+
+      birthday: { required: __WEBPACK_IMPORTED_MODULE_2_vuelidate_lib_validators__["required"] },
+      email: {
+        email: __WEBPACK_IMPORTED_MODULE_2_vuelidate_lib_validators__["email"]
+      },
+      password: { required: __WEBPACK_IMPORTED_MODULE_2_vuelidate_lib_validators__["required"], integer: __WEBPACK_IMPORTED_MODULE_2_vuelidate_lib_validators__["integer"], maxLength: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2_vuelidate_lib_validators__["maxLength"])(4) }
+
+    }
   },
   data() {
     return {
+      submitted: false,
+
       show: false,
       disabled: false,
       form: {
@@ -2192,91 +1989,108 @@ __WEBPACK_IMPORTED_MODULE_3_vue__["default"].component("vue-phone-number-input",
       error: null
     };
   },
-  created: function () {
-    this.initReCaptcha();
-    console.log("hererere");
-    console.log(this.appVerifier);
-  },
+  //Madonna_change_As Ahmed said
+  // created: function() {
+  //   this.initReCaptcha();
+  //   console.log("hererere");
+  //   console.log(this.appVerifier);
+  // },
+
   methods: {
     goToLogin() {
       debugger;
       this.$router.push("login");
     },
-    sendOtp() {
-      if (this.form.phone.length < 10) {
-        alert("Invalid Phone Number Format !");
-      } else {
-        //
-        let phoneNumber = this.form.phone;
-        //
-        let appVerifier = this.appVerifier;
-        //
-        __WEBPACK_IMPORTED_MODULE_0_firebase___default.a.auth().signInWithPhoneNumber(phoneNumber, appVerifier).then(function (confirmationResult) {
-          // SMS sent. Prompt user to type the code from the message, then sign the
-          // user in with confirmationResult.confirm(code).
-          window.confirmationResult = confirmationResult;
+    // sendOtp() {
+    //   if (this.form.phone.length < 10) {
+    //     alert("Invalid Phone Number Format !");
+    //   } else {
+    //     //
+    //     let phoneNumber = this.form.phone;
+    //     //
+    //     let appVerifier = this.appVerifier;
+    //     //
+    //     firebase
+    //       .auth()
+    //       .signInWithPhoneNumber(phoneNumber, appVerifier)
+    //       .then(function(confirmationResult) {
+    //         // SMS sent. Prompt user to type the code from the message, then sign the
+    //         // user in with confirmationResult.confirm(code).
+    //         window.confirmationResult = confirmationResult;
 
-          //
-          alert("SMS sent");
-        }).catch(function (error) {
-          // Error; SMS not sent
-          // ...
-          alert("Error ! SMS not sent");
-        });
-      }
-    },
+    //         //
+    //         alert("SMS sent");
+    //       })
+    //       .catch(function(error) {
+    //         // Error; SMS not sent
+    //         // ...
+    //         alert("Error ! SMS not sent");
+    //       });
+    //   }
+    // },
     countryChanged(country) {
       this.countryCode = country.dialCode;
       console.log(country);
     },
-    initReCaptcha() {
-      setTimeout(() => {
-        let vm = this;
-        window.recaptchaVerifier = new __WEBPACK_IMPORTED_MODULE_0_firebase___default.a.auth.RecaptchaVerifier("recaptcha-container", {
-          size: "invisible",
-          callback: function (response) {
-            // reCAPTCHA solved, allow signInWithPhoneNumber.
-            // ...
-          },
-          "expired-callback": function () {
-            // Response expired. Ask user to solve reCAPTCHA again.
-            // ...
-          }
-        });
-        //
-        this.appVerifier = window.recaptchaVerifier;
-      }, 1000);
-    },
-    verifyOtp() {
-      if (this.form.phone.length < 10) {
-        alert("Invalid Phone Number/OTP Format !");
-      } else {
-        //
-        let vm = this;
-        let code = this.form.otp;
-        //
-        window.confirmationResult.confirm(code).then(function (result) {
-          // User signed in successfully.
-          var user = result.user;
-          console.log(result);
-          vm.show = true;
-          vm.disabled = true;
-          // ...
-          //route to set password !
-        }).catch(function (error) {
-          // User couldn't sign in (bad verification code?)
-          // ...
-        });
-      }
-    },
+    // initReCaptcha() {
+    //   setTimeout(() => {
+    //     let vm = this;
+    //     window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier(
+    //       "recaptcha-container",
+    //       {
+    //         size: "invisible",
+    //         callback: function(response) {
+    //           // reCAPTCHA solved, allow signInWithPhoneNumber.
+    //           // ...
+    //         },
+    //         "expired-callback": function() {
+    //           // Response expired. Ask user to solve reCAPTCHA again.
+    //           // ...
+    //         }
+    //       }
+    //     );
+    //     //
+    //     this.appVerifier = window.recaptchaVerifier;
+    //   }, 1000);
+    // },
+    // verifyOtp() {
+    //   if (this.form.phone.length < 10) {
+    //     alert("Invalid Phone Number/OTP Format !");
+    //   } else {
+    //     //
+    //     let vm = this;
+    //     let code = this.form.otp;
+    //     //
+    //     window.confirmationResult
+    //       .confirm(code)
+    //       .then(function(result) {
+    //         // User signed in successfully.
+    //         var user = result.user;
+    //         console.log(result);
+    //         vm.show = true;
+    //         vm.disabled = true;
+    //         // ...
+    //         //route to set password !
+    //       })
+    //       .catch(function(error) {
+    //         // User couldn't sign in (bad verification code?)
+    //         // ...
+    //       });
+    //   }
+    // },
     submit() {
+      this.submitted = true;
+      this.$v.$touch();
+      if (this.$v.$invalid) {
+        return;
+      }
       this.addUser();
     },
     addUser: function () {
       let vm = this;
-      const axios = __webpack_require__(46).default;
+      const axios = __webpack_require__(47).default;
       if (this.notifications) this.notifications = [];
-      if (this.form.phone) axios.post(__WEBPACK_IMPORTED_MODULE_5__variables__["a" /* URL */] + "/user", {
+      if (this.form.phone) axios.post(__WEBPACK_IMPORTED_MODULE_4__variables__["a" /* URL */] + "/user", {
         name: this.form.name,
         phone: this.form.phone,
         email: this.form.email,
@@ -2288,25 +2102,28 @@ __WEBPACK_IMPORTED_MODULE_3_vue__["default"].component("vue-phone-number-input",
         verify: "false"
       }).then(response => {
         console.log(response.data);
-        __WEBPACK_IMPORTED_MODULE_6__store__["a" /* default */].dispatch("fetchUser", {
+        __WEBPACK_IMPORTED_MODULE_5__store__["a" /* default */].dispatch("fetchUser", {
           id: response.data,
           name: vm.form.name,
-          email: vm.form.email
+          email: vm.form.email,
+          phone: vm.form.phone,
+          birthday: vm.form.birthday
         });
-        if (vm.form.doctor == 0) vm.$router.push({ path: "/view-survey/" + __WEBPACK_IMPORTED_MODULE_5__variables__["b" /* FORM_ID */] });else vm.$router.push({ path: "/doctorapprove" });
+        if (vm.form.doctor == 0) vm.$router.push({ path: "/view-survey/" + __WEBPACK_IMPORTED_MODULE_4__variables__["b" /* FORM_ID */] });else vm.$router.push({ path: "/doctorapprove" });
       }, response => {});
     }
   }
 });
 
 /***/ }),
-/* 319 */
+
+/***/ 319:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_firebase__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_firebase__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_firebase__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -2399,12 +2216,13 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 });
 
 /***/ }),
-/* 320 */
+
+/***/ 320:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__variables_js__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__variables_js__ = __webpack_require__(18);
 //
 //
 //
@@ -2497,14 +2315,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 321 */
+
+/***/ 321:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__notifications_vue__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__notifications_vue__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__notifications_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__notifications_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__variables_js__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__variables_js__ = __webpack_require__(18);
 //
 //
 //
@@ -2613,14 +2432,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 322 */
+
+/***/ 322:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__notifications_vue__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__notifications_vue__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__notifications_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__notifications_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__variables_js__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__variables_js__ = __webpack_require__(18);
 //
 //
 //
@@ -2685,14 +2505,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 323 */
+
+/***/ 323:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__notifications_vue__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__notifications_vue__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__notifications_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__notifications_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__variables__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__variables__ = __webpack_require__(18);
 //
 //
 //
@@ -2806,14 +2627,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 324 */
+
+/***/ 324:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuedraggable__ = __webpack_require__(436);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuedraggable__ = __webpack_require__(438);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuedraggable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuedraggable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__variables_js__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__variables_js__ = __webpack_require__(18);
 //
 //
 //
@@ -2932,14 +2754,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 325 */
+
+/***/ 325:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__notifications_vue__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__notifications_vue__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__notifications_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__notifications_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__variables_js__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__variables_js__ = __webpack_require__(18);
 //
 //
 //
@@ -3063,7 +2886,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 326 */
+
+/***/ 326:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3090,12 +2914,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 327 */
+
+/***/ 327:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__variables_js__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__variables_js__ = __webpack_require__(18);
 //
 //
 //
@@ -3212,14 +3037,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 328 */
+
+/***/ 328:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__notifications_vue__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__notifications_vue__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__notifications_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__notifications_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__variables_js__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__variables_js__ = __webpack_require__(18);
 //
 //
 //
@@ -3278,7 +3104,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 329 */
+
+/***/ 329:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3532,15 +3359,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     });
   }
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(122)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(123)))
 
 /***/ }),
-/* 330 */
+
+/***/ 330:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_variables__ = __webpack_require__(17);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_variables__ = __webpack_require__(18);
+//
 //
 //
 //
@@ -3550,94 +3379,96 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 // import Punny from './Punny';
-// import * as SurveyCreator from "survey-creator";
-
+//import  {SurveyCreator} from "survey-creator";
 //import "survey-creator/survey-creator.css";
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "survey-creator",
-    props: {
-        form_id: Number
-    },
-    data() {
-        return {
-            old: "",
-            surveyCreator: ""
-        };
-    },
+  name: "survey-creator",
+  props: {
+    form_id: Number
+  },
+  data() {
+    return {
+      old: "",
+      surveyCreator: ""
+    };
+  },
 
-    mounted: function () {
-        let options = {
-            showEmbededSurveyTab: true,
-            showTranslationTab: true,
-            showLogicTab: true,
-            showState: true,
-            haveCommercialLicense: true,
-            showOptions: true,
-            showSave: true
-        };
+  mounted: function () {
+    let options = {
+      showEmbededSurveyTab: true,
+      showTranslationTab: true,
+      showLogicTab: true,
+      showState: true,
+      haveCommercialLicense: true,
+      showOptions: true,
+      showSave: true
+    };
 
-        if (!SurveyCreator) SurveyCreator = {};
-        this.surveyCreator = new SurveyCreator.SurveyCreator("surveyCreatorContainer", options);
-        this.getForm(this.surveyCreator);
-        // surveyCreator.saveSurveyFunc = this.saveMySurvey();
-    },
-    methods: {
-        saveMySurvey: function () {
-            console.log(this.surveyCreator.text);
-            // console.log(JSON.stringify(this.text));
+    debugger;
+    // if (!SurveyCreator) SurveyCreator = {};
 
-            var vm = this;
-            $.ajax({
-                url: __WEBPACK_IMPORTED_MODULE_0__components_variables__["a" /* URL */] + "/form/" + __WEBPACK_IMPORTED_MODULE_0__components_variables__["b" /* FORM_ID */],
-                type: "PUT",
-                data: {
-                    questions: vm.surveyCreator.text
-                },
-                success: function (data) {
-                    callback(saveNo, true);
-                },
-                error: function (xhr, ajaxOptions, thrownError) {
-                    callback(saveNo, false);
-                    alert(thrownError);
-                }
-            });
+    this.surveyCreator = new SurveyCreator.SurveyCreator("surveyCreatorContainer", options);
+    this.getForm(this.surveyCreator);
+    // surveyCreator.saveSurveyFunc = this.saveMySurvey();
+  },
+  methods: {
+    saveMySurvey: function () {
+      console.log(this.surveyCreator.text);
+      // console.log(JSON.stringify(this.text));
+
+      var vm = this;
+      $.ajax({
+        url: __WEBPACK_IMPORTED_MODULE_0__components_variables__["a" /* URL */] + "/form/" + __WEBPACK_IMPORTED_MODULE_0__components_variables__["b" /* FORM_ID */],
+        type: "PUT",
+        data: {
+          questions: vm.surveyCreator.text
         },
-        getForm: function (json) {
-            var formData = new FormData();
-            var vm = this;
-            var oldv = json;
-            if (this.notifications) this.notifications = [];
-            this.$http.get(__WEBPACK_IMPORTED_MODULE_0__components_variables__["a" /* URL */] + "/form/" + __WEBPACK_IMPORTED_MODULE_0__components_variables__["b" /* FORM_ID */], formData, {
-                headers: {
-                    enctype: "multipart/form-data"
-                }
-            }).then(response => {
-                console.log(response.data.questions);
-
-                json.text = response.data.questions;
-            }, response => {
-                this.notifications.push({
-                    type: "error",
-                    message: "Form not created"
-                });
-            });
+        success: function (data) {
+          //callback(saveNo, true);
+        },
+        error: function (xhr, ajaxOptions, thrownError) {
+          //callback(saveNo, false);
+          alert(thrownError);
         }
+      });
+    },
+    getForm: function (json) {
+      var formData = new FormData();
+      var vm = this;
+      var oldv = json;
+      if (this.notifications) this.notifications = [];
+      this.$http.get(__WEBPACK_IMPORTED_MODULE_0__components_variables__["a" /* URL */] + "/form/" + __WEBPACK_IMPORTED_MODULE_0__components_variables__["b" /* FORM_ID */], formData, {
+        headers: {
+          enctype: "multipart/form-data"
+        }
+      }).then(response => {
+        console.log(response.data.questions);
+
+        json.text = response.data.questions;
+      }, response => {
+        this.notifications.push({
+          type: "error",
+          message: "Form not created"
+        });
+      });
     }
+  }
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(122)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(123)))
 
 /***/ }),
-/* 331 */
+
+/***/ 331:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_survey_vue__ = __webpack_require__(277);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_survey_vue__ = __webpack_require__(276);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_survey_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_survey_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_dist_css_bootstrap_css__ = __webpack_require__(272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_dist_css_bootstrap_css__ = __webpack_require__(368);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_dist_css_bootstrap_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_bootstrap_dist_css_bootstrap_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_variables__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_variables__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vuex__ = __webpack_require__(38);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -3684,8 +3515,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 // import * as SurveyPDF from "survey-pdf";
 
-var Survey = __WEBPACK_IMPORTED_MODULE_0_survey_vue__["Survey"];
-Survey.cssType = "bootstrap";
+__WEBPACK_IMPORTED_MODULE_0_survey_vue__["Survey"].cssType = "bootstrap";
 
 // var myloc = Survey.surveyLocalization.locales["localename"];
 // myloc.completingSurvey = "Your text on completing survey";
@@ -3699,7 +3529,7 @@ Survey.cssType = "bootstrap";
     user: "user"
   })),
   components: {
-    Survey
+    Survey: __WEBPACK_IMPORTED_MODULE_0_survey_vue__["Survey"]
   },
   mounted: function () {
     this.fetchFormData();
@@ -3710,7 +3540,7 @@ Survey.cssType = "bootstrap";
     fetchFormData: function () {
       var id = this.$route.params.id;
       //this.user.data.user_id
-      var user_id = 18;
+      var user_id = this.user.data.user_id;
       var vm = this;
       this.$http.get(__WEBPACK_IMPORTED_MODULE_2__components_variables__["a" /* URL */] + "/form/" + __WEBPACK_IMPORTED_MODULE_2__components_variables__["b" /* FORM_ID */]).then(response => {
         vm.question = response.body;
@@ -3733,10 +3563,23 @@ Survey.cssType = "bootstrap";
           console.log(vm.age);
           var learnQuestion = model.getQuestionByName("pdf");
           learnQuestion.value = true;
-          var learnQuestion = model.getQuestionByName("age65");
-          learnQuestion.value = true;
+          debugger;
+
+          var date = new Date(vm.$store.state.user.data.birthday).toISOString().slice(0, 10);
+          var today = new Date();
+          var birthDate = new Date(date);
+          var myage = today.getFullYear() - birthDate.getFullYear();
+          var m = today.getMonth() - birthDate.getMonth();
+          if (m < 0 || m === 0 && today.getDate() < birthDate.getDate()) {
+            myage--;
+          }
+          console.log(" age.value: " + myage);
+          var age = model.getQuestionByName("age65");
+          myage > 65 ? age.value = true : age.value = false;
+
+          // age.value = true;
           console.log(vm.user.data.phone);
-          learnQuestion.text = surveyPDF.data = vm.user.data.answer;
+          surveyPDF.data = vm.user.data.answer;
           vm.pdfs.forEach(pdf => {
             vm.downloadWithVueResource(pdf.url, pdf.name);
           });
@@ -3807,6 +3650,13 @@ Survey.cssType = "bootstrap";
           });
 
           surveyPDF.save();
+          setTimeout(function () {
+            vm.$store.state.user.data = null;
+            vm.$store.state.user.loggedIn = false;
+            // location.herf = "#/";
+            vm.$router.push("/");
+            location.reload();
+          }, 3000);
         };
         var submit = function () {
           console.log(id);
@@ -3823,10 +3673,11 @@ Survey.cssType = "bootstrap";
               user_id: user_id
             },
             success: function (data) {
-              callback(saveNo, true);
+              //هنطلع رساله نقوله اي حاجه
+              // callback(saveNo, true);
             },
             error: function (xhr, ajaxOptions, thrownError) {
-              callback(saveNo, false);
+              // callback(saveNo, false);
               alert(thrownError);
             }
           });
@@ -3841,9 +3692,10 @@ Survey.cssType = "bootstrap";
       document.body.appendChild(link);
       link.click();
     },
-    calculateAge: function () {
+    calculateAge: function (date) {
+      // هحط بتاعتي
       let currentDate = new Date();
-      let birthDate = new Date(this.user.data.birthDate);
+      let birthDate = new Date(date);
       let difference = currentDate - birthDate;
       let age = Math.floor(difference / 31557600000);
       this.age = age;
@@ -3873,22 +3725,57 @@ Survey.cssType = "bootstrap";
     };
   }
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(122)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(123)))
 
 /***/ }),
-/* 332 */
+
+/***/ 332:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_survey_vue__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_survey_vue__ = __webpack_require__(276);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_survey_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_survey_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_dist_css_bootstrap_css__ = __webpack_require__(272);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_dist_css_bootstrap_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_bootstrap_dist_css_bootstrap_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_variables__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_firebase__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_firebase__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_variables__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vuex__ = __webpack_require__(38);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3937,8 +3824,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 // import SurveyCreator from "../components/SurveyCreator";
 
 
-var Survey = __WEBPACK_IMPORTED_MODULE_0_survey_vue__["Survey"];
-Survey.cssType = "bootstrap";
+//Survey.cssType = "bootstrap";
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -3949,11 +3835,57 @@ Survey.cssType = "bootstrap";
 
   mounted: function () {
     this.fetchFormData();
+    this.initReCaptcha();
   },
   components: {
-    Survey
+    Survey: __WEBPACK_IMPORTED_MODULE_0_survey_vue__["Survey"]
   },
   methods: {
+    sendOtp() {
+      if (this.$store.state.user.data.phone < 10) {
+        alert("Invalid Phone Number Format !");
+      } else {
+        //
+        let phoneNumber = this.$store.state.user.data.phone;
+        //
+        let appVerifier = this.appVerifier;
+        //
+        __WEBPACK_IMPORTED_MODULE_1_firebase___default.a.auth().signInWithPhoneNumber(phoneNumber, appVerifier).then(function (confirmationResult) {
+          // SMS sent. Prompt user to type the code from the message, then sign the
+          // user in with confirmationResult.confirm(code).
+          window.confirmationResult = confirmationResult;
+
+          //
+          setTimeout(function () {
+            vm.$store.state.user.data = null;
+            vm.$store.state.user.loggedIn = false;
+            vm.$router.push("/login");
+          }, 5000);
+        }).catch(function (error) {
+          // Error; SMS not sent
+          // ...
+          alert("Error ! SMS not sent");
+        });
+      }
+    },
+    initReCaptcha() {
+      setTimeout(() => {
+        let vm = this;
+        window.recaptchaVerifier = new __WEBPACK_IMPORTED_MODULE_1_firebase___default.a.auth.RecaptchaVerifier("recaptcha-container", {
+          size: "invisible",
+          callback: function (response) {
+            // reCAPTCHA solved, allow signInWithPhoneNumber.
+            // ...
+          },
+          "expired-callback": function () {
+            // Response expired. Ask user to solve reCAPTCHA again.
+            // ...
+          }
+        });
+        //
+        this.appVerifier = window.recaptchaVerifier;
+      }, 1000);
+    },
     fetchFormData: function () {
       var id = __WEBPACK_IMPORTED_MODULE_2__components_variables__["b" /* FORM_ID */];
       var user_id = this.user.data.user_id;
@@ -3976,15 +3908,28 @@ Survey.cssType = "bootstrap";
           var learnQuestion = model.getQuestionByName("pdf");
           learnQuestion.value = true;
 
+          var date = new Date(vm.$store.state.user.data.birthday).toISOString().slice(0, 10);
+          var today = new Date();
+          var birthDate = new Date(date);
+          var myage = today.getFullYear() - birthDate.getFullYear();
+          var m = today.getMonth() - birthDate.getMonth();
+          if (m < 0 || m === 0 && today.getDate() < birthDate.getDate()) {
+            myage--;
+          }
+          console.log(" age.value: " + myage);
+          var age = model.getQuestionByName("age65");
+          myage > 65 ? age.value = true : age.value = false;
           vm.notComplete = false;
-          const axios = __webpack_require__(46).default;
+          const axios = __webpack_require__(47).default;
           axios.post(__WEBPACK_IMPORTED_MODULE_2__components_variables__["a" /* URL */] + "/answer", {
             answer: model.data,
             form_id: __WEBPACK_IMPORTED_MODULE_2__components_variables__["b" /* FORM_ID */],
             user_id: user_id
           }).then(response => {
             console.log(response);
-            callback(saveNo, true);
+            vm.sendOtp();
+            // callback(saveNo, true);
+            //Added by Madonna
           }, response => {});
         };
         model.onComplete.add(submit);
@@ -4015,6 +3960,7 @@ Survey.cssType = "bootstrap";
       survey: {},
       savePDF: {},
       question: {},
+      appVerifier: "",
       notComplete: true,
       pdfs: [{ url: "http://www.pdf995.com/samples/pdf.pdf", name: "test" }]
     };
@@ -4022,21 +3968,24 @@ Survey.cssType = "bootstrap";
 });
 
 /***/ }),
-/* 333 */
+
+/***/ 333:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App__ = __webpack_require__(281);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__App__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__router__ = __webpack_require__(280);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_resource__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_bootstrap_vue__ = __webpack_require__(281);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__router__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_resource__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_bootstrap_vue__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_firebase__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__store__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_variables__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__store__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_variables__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_vuelidate__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_vuelidate___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_vuelidate__);
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 
@@ -4046,6 +3995,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+
+
+__WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_8_vuelidate___default.a);
 
 __WEBPACK_IMPORTED_MODULE_0_vue__["default"].config.productionTip = false;
 __WEBPACK_IMPORTED_MODULE_0_vue__["default"].http.options.emulateJSON = true;
@@ -4057,13 +4009,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_4_boo
 __WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_4_bootstrap_vue__["b" /* IconsPlugin */]);
 
 const configOptions = {
-  apiKey: "AIzaSyBov43YgZIhBH6xLfcRUloec5ORDxF8pLg",
-  authDomain: "cv19app.firebaseapp.com",
-  databaseURL: "https://cv19app.firebaseio.com",
-  projectId: "cv19-fb498",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: "1:990026941051:web:bf71720f51c9092fb898de"
+  apiKey: "AIzaSyBov43YgZIhBH6xLfcRUloec5ORDxF8pLg", authDomain: "cv19-fb498.firebaseapp.com", databaseURL: "https://cv19-fb498.firebaseio.com", projectId: "cv19-fb498", storageBucket: "cv19-fb498.appspot.com", messagingSenderId: "990026941051", appId: "1:990026941051:web:bf71720f51c9092fb898de", measurementId: "G-XZW3QB86ZW"
 };
 
 __WEBPACK_IMPORTED_MODULE_5_firebase__["initializeApp"](configOptions);
@@ -4082,145 +4028,138 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["default"]({
 });
 
 /***/ }),
-/* 334 */,
-/* 335 */,
-/* 336 */,
-/* 337 */,
-/* 338 */,
-/* 339 */,
-/* 340 */,
-/* 341 */,
-/* 342 */,
-/* 343 */,
-/* 344 */,
-/* 345 */,
-/* 346 */,
-/* 347 */,
-/* 348 */,
-/* 349 */,
-/* 350 */,
-/* 351 */,
-/* 352 */,
-/* 353 */,
-/* 354 */,
-/* 355 */,
-/* 356 */,
-/* 357 */,
-/* 358 */,
-/* 359 */,
-/* 360 */,
-/* 361 */,
-/* 362 */,
-/* 363 */,
-/* 364 */,
-/* 365 */,
-/* 366 */,
-/* 367 */,
-/* 368 */
+
+/***/ 368:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 369 */
+
+/***/ 369:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 370 */
+
+/***/ 370:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 371 */
+
+/***/ 371:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 372 */
+
+/***/ 372:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 373 */
+
+/***/ 373:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 374 */
+
+/***/ 374:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 375 */
+
+/***/ 375:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 376 */
+
+/***/ 376:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 377 */
+
+/***/ 377:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 378 */
+
+/***/ 378:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 379 */
+
+/***/ 379:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 380 */
+
+/***/ 380:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 381 */
+
+/***/ 381:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 382 */
+
+/***/ 382:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 383 */,
-/* 384 */,
-/* 385 */,
-/* 386 */
+
+/***/ 383:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 384:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 388:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(378)
+__webpack_require__(380)
 
 var Component = __webpack_require__(11)(
   /* script */
   __webpack_require__(310),
   /* template */
-  __webpack_require__(426),
+  __webpack_require__(428),
   /* scopeId */
   null,
   /* cssModules */
@@ -4231,18 +4170,19 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 387 */
+
+/***/ 389:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(382)
+__webpack_require__(384)
 
 var Component = __webpack_require__(11)(
   /* script */
   __webpack_require__(311),
   /* template */
-  __webpack_require__(430),
+  __webpack_require__(432),
   /* scopeId */
   "data-v-c97a0a38",
   /* cssModules */
@@ -4253,74 +4193,17 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 388 */
+
+/***/ 390:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(376)
+__webpack_require__(378)
 
 var Component = __webpack_require__(11)(
   /* script */
   __webpack_require__(312),
-  /* template */
-  __webpack_require__(420),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 389 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/* styles */
-__webpack_require__(381)
-
-var Component = __webpack_require__(11)(
-  /* script */
-  __webpack_require__(313),
-  /* template */
-  __webpack_require__(429),
-  /* scopeId */
-  "data-v-bf9cc140",
-  /* cssModules */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 390 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(11)(
-  /* script */
-  __webpack_require__(314),
-  /* template */
-  __webpack_require__(424),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 391 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(11)(
-  /* script */
-  null,
   /* template */
   __webpack_require__(423),
   /* scopeId */
@@ -4333,14 +4216,57 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 392 */
+
+/***/ 391:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__(383)
+
+var Component = __webpack_require__(11)(
+  /* script */
+  __webpack_require__(313),
+  /* template */
+  __webpack_require__(431),
+  /* scopeId */
+  "data-v-bf9cc140",
+  /* cssModules */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 392:
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(11)(
+  /* script */
+  __webpack_require__(314),
+  /* template */
+  __webpack_require__(426),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 393:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(11)(
   /* script */
   __webpack_require__(315),
   /* template */
-  __webpack_require__(432),
+  __webpack_require__(434),
   /* scopeId */
   null,
   /* cssModules */
@@ -4351,14 +4277,15 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 393 */
+
+/***/ 394:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(11)(
   /* script */
   __webpack_require__(316),
   /* template */
-  __webpack_require__(418),
+  __webpack_require__(420),
   /* scopeId */
   null,
   /* cssModules */
@@ -4369,171 +4296,8 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 394 */
-/***/ (function(module, exports, __webpack_require__) {
 
-
-/* styles */
-__webpack_require__(372)
-
-var Component = __webpack_require__(11)(
-  /* script */
-  __webpack_require__(317),
-  /* template */
-  __webpack_require__(415),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 395 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(11)(
-  /* script */
-  __webpack_require__(318),
-  /* template */
-  __webpack_require__(411),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 396 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(11)(
-  /* script */
-  __webpack_require__(319),
-  /* template */
-  __webpack_require__(422),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 397 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/* styles */
-__webpack_require__(379)
-
-var Component = __webpack_require__(11)(
-  /* script */
-  __webpack_require__(320),
-  /* template */
-  __webpack_require__(427),
-  /* scopeId */
-  "data-v-7928bd28",
-  /* cssModules */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 398 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/* styles */
-__webpack_require__(371)
-
-var Component = __webpack_require__(11)(
-  /* script */
-  __webpack_require__(321),
-  /* template */
-  __webpack_require__(414),
-  /* scopeId */
-  "data-v-2b5746b1",
-  /* cssModules */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 399 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(11)(
-  /* script */
-  __webpack_require__(322),
-  /* template */
-  __webpack_require__(409),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 400 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/* styles */
-__webpack_require__(370)
-
-var Component = __webpack_require__(11)(
-  /* script */
-  __webpack_require__(323),
-  /* template */
-  __webpack_require__(413),
-  /* scopeId */
-  "data-v-255ed4e3",
-  /* cssModules */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 401 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/* styles */
-__webpack_require__(377)
-
-var Component = __webpack_require__(11)(
-  /* script */
-  __webpack_require__(324),
-  /* template */
-  __webpack_require__(425),
-  /* scopeId */
-  "data-v-73e363a8",
-  /* cssModules */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 402 */
+/***/ 395:
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -4542,49 +4306,9 @@ __webpack_require__(374)
 
 var Component = __webpack_require__(11)(
   /* script */
-  __webpack_require__(325),
+  __webpack_require__(317),
   /* template */
   __webpack_require__(417),
-  /* scopeId */
-  "data-v-3747d669",
-  /* cssModules */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 403 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/* styles */
-__webpack_require__(380)
-
-var Component = __webpack_require__(11)(
-  /* script */
-  __webpack_require__(327),
-  /* template */
-  __webpack_require__(428),
-  /* scopeId */
-  "data-v-7ed90bfa",
-  /* cssModules */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 404 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(11)(
-  /* script */
-  __webpack_require__(328),
-  /* template */
-  __webpack_require__(431),
   /* scopeId */
   null,
   /* cssModules */
@@ -4595,12 +4319,55 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 405 */
+
+/***/ 396:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__(370)
+
+var Component = __webpack_require__(11)(
+  /* script */
+  __webpack_require__(318),
+  /* template */
+  __webpack_require__(413),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 397:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(11)(
   /* script */
-  __webpack_require__(329),
+  __webpack_require__(319),
+  /* template */
+  __webpack_require__(425),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 398:
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(11)(
+  /* script */
+  null,
   /* template */
   __webpack_require__(421),
   /* scopeId */
@@ -4613,7 +4380,31 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 406 */
+
+/***/ 399:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__(381)
+
+var Component = __webpack_require__(11)(
+  /* script */
+  __webpack_require__(320),
+  /* template */
+  __webpack_require__(429),
+  /* scopeId */
+  "data-v-7928bd28",
+  /* cssModules */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 400:
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -4622,9 +4413,181 @@ __webpack_require__(373)
 
 var Component = __webpack_require__(11)(
   /* script */
-  __webpack_require__(330),
+  __webpack_require__(321),
   /* template */
   __webpack_require__(416),
+  /* scopeId */
+  "data-v-2b5746b1",
+  /* cssModules */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 401:
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(11)(
+  /* script */
+  __webpack_require__(322),
+  /* template */
+  __webpack_require__(411),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 402:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__(372)
+
+var Component = __webpack_require__(11)(
+  /* script */
+  __webpack_require__(323),
+  /* template */
+  __webpack_require__(415),
+  /* scopeId */
+  "data-v-255ed4e3",
+  /* cssModules */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 403:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__(379)
+
+var Component = __webpack_require__(11)(
+  /* script */
+  __webpack_require__(324),
+  /* template */
+  __webpack_require__(427),
+  /* scopeId */
+  "data-v-73e363a8",
+  /* cssModules */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 404:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__(376)
+
+var Component = __webpack_require__(11)(
+  /* script */
+  __webpack_require__(325),
+  /* template */
+  __webpack_require__(419),
+  /* scopeId */
+  "data-v-3747d669",
+  /* cssModules */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 405:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__(382)
+
+var Component = __webpack_require__(11)(
+  /* script */
+  __webpack_require__(327),
+  /* template */
+  __webpack_require__(430),
+  /* scopeId */
+  "data-v-7ed90bfa",
+  /* cssModules */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 406:
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(11)(
+  /* script */
+  __webpack_require__(328),
+  /* template */
+  __webpack_require__(433),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 407:
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(11)(
+  /* script */
+  __webpack_require__(329),
+  /* template */
+  __webpack_require__(424),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 408:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__(375)
+
+var Component = __webpack_require__(11)(
+  /* script */
+  __webpack_require__(330),
+  /* template */
+  __webpack_require__(418),
   /* scopeId */
   "data-v-33e66800",
   /* cssModules */
@@ -4635,18 +4598,19 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 407 */
+
+/***/ 409:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(375)
+__webpack_require__(377)
 
 var Component = __webpack_require__(11)(
   /* script */
   __webpack_require__(331),
   /* template */
-  __webpack_require__(419),
+  __webpack_require__(422),
   /* scopeId */
   null,
   /* cssModules */
@@ -4657,18 +4621,19 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 408 */
+
+/***/ 410:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(368)
+__webpack_require__(369)
 
 var Component = __webpack_require__(11)(
   /* script */
   __webpack_require__(332),
   /* template */
-  __webpack_require__(410),
+  __webpack_require__(412),
   /* scopeId */
   null,
   /* cssModules */
@@ -4679,7 +4644,8 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 409 */
+
+/***/ 411:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -4723,11 +4689,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 410 */
+
+/***/ 412:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
+    staticStyle: {
+      "background": "#F5FBFF"
+    }
+  }, [_vm._m(0), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('div', {
     staticClass: "container",
     attrs: {
       "id": "view"
@@ -4736,7 +4707,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "row justify-content-center"
   }, [_c('div', {
     staticClass: "col-md-8"
-  }, [_vm._m(0), _vm._v(" "), _c('div', {
+  }, [_c('div', {
     staticClass: "module-box"
   }, [_c('h1', {
     staticClass: "text-center"
@@ -4746,22 +4717,51 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "survey": _vm.survey,
       "onComplete": _vm.savePDF
     }
-  })], 1)])])])
+  }), _vm._v(" "), _c('div', {
+    attrs: {
+      "id": "recaptcha-container"
+    }
+  })], 1)])])]), _vm._v(" "), _c('br'), _c('br')])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "alert alert-info",
+    staticClass: "service_area"
+  }, [_c('div', {
+    staticClass: "container p-0"
+  }, [_c('div', {
+    staticClass: "row no-gutters"
+  }, [_c('div', {
+    staticClass: "col-xl-4 col-md-4"
+  }, [_c('div', {
+    staticClass: "single_service"
+  }, [_c('img', {
     attrs: {
-      "role": "alert"
+      "src": "https://cdn.jsdelivr.net/gh/amiraelsayed/covid19/img/about/who.png",
+      "width": "50"
     }
-  }, [_c('p', [_vm._v("\n          This website / application is made by team EnSofia. It is our humble\n          effort to contribute and help the public to aid the tremendous\n          efforts and steps taken by many organizations to flatten the curve.\n        ")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('h4', {
-    staticClass: "alert-heading"
-  }, [_vm._v("What it is?")]), _vm._v(" "), _c('p', [_vm._v("\n          This website is application is built for awareness and sharing\n          information published by the US – Centers for Disease Control and\n          Prevention CDC.gov\n        ")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('h4', {
-    staticClass: "alert-heading"
-  }, [_vm._v("What it is NOT?")]), _vm._v(" "), _c('p', [_vm._v("\n          This is not diagnostic or medical site. You should not use this\n          website or its communications for any medical advice. If you have\n          medical questions, contact your doctor. If you have an emergency\n          call 911.\n        ")])])
+  }), _vm._v(" "), _c('p', [_vm._v("\n              This website / application is made by team EnSofia. It is our\n              humble effort to contribute and help the public to aid the\n              tremendous efforts and steps taken by many organizations to\n              flatten the curve.\n            ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-xl-4 col-md-4"
+  }, [_c('div', {
+    staticClass: "single_service"
+  }, [_c('img', {
+    attrs: {
+      "src": "https://cdn.jsdelivr.net/gh/amiraelsayed/covid19/img/about/correct1.png",
+      "width": "50"
+    }
+  }), _vm._v(" "), _c('p', [_c('strong', [_vm._v("What it is? ")]), _vm._v("This website is application is\n              built for awareness and sharing information published by the US\n              – Centers for Disease Control and Prevention CDC.gov\n            ")]), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _c('br')])]), _vm._v(" "), _c('div', {
+    staticClass: "col-xl-4 col-md-4"
+  }, [_c('div', {
+    staticClass: "single_service"
+  }, [_c('img', {
+    attrs: {
+      "src": "https://cdn.jsdelivr.net/gh/amiraelsayed/covid19/img/about/wrong.png",
+      "width": "50"
+    }
+  }), _vm._v(" "), _c('p', [_c('strong', [_vm._v("What it is NOT? ")]), _vm._v("This is not diagnostic or\n              medical site. You should not use this website or its\n              communications for any medical advice. If you have medical\n              questions, contact your doctor. If you have an emergency call\n              911.\n            ")])])])])])])
 }]}
 
 /***/ }),
-/* 411 */
+
+/***/ 413:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -4785,6 +4785,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "row"
   }, [_vm._m(1), _vm._v("\n             \n            "), _c('vue-tel-input', _vm._b({
     staticClass: "form-control col col-9",
+    class: {
+      'is-invalid': _vm.submitted && _vm.$v.form.phone.$error
+    },
     on: {
       "country-changed": _vm.countryChanged
     },
@@ -4795,7 +4798,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "form.phone"
     }
-  }, 'vue-tel-input', _vm.bindProps, false))], 1), _vm._v(" "), _c('form', {
+  }, 'vue-tel-input', _vm.bindProps, false)), _vm._v(" "), (_vm.submitted && !_vm.$v.form.phone.required) ? _c('div', {
+    staticClass: "invalid-feedback"
+  }, [_vm._v("\n              phone is required\n            ")]) : _vm._e()], 1), _vm._v(" "), _c('form', {
     attrs: {
       "action": "#"
     },
@@ -4807,7 +4812,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('div', {
     staticClass: "row"
-  }, [_vm._m(2), _vm._v("\n               \n              "), (_vm.form.doctor == 0) ? _c('input', {
+  }, [_vm._m(2), _vm._v("\n               \n              "), _c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -4817,11 +4822,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "form-control col col-9",
     attrs: {
       "id": "name",
-      "type": "name",
-      "name": "name",
-      "value": "",
-      "placeholder": "Enter Your Name",
-      "autofocus": ""
+      "placeholder": "Enter Your Name"
     },
     domProps: {
       "value": (_vm.form.name)
@@ -4832,33 +4833,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.$set(_vm.form, "name", $event.target.value)
       }
     }
-  }) : _vm._e(), _vm._v(" "), (_vm.form.doctor == 1) ? _c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.form.name),
-      expression: "form.name"
-    }],
-    staticClass: "form-control col col-9",
-    attrs: {
-      "id": "name",
-      "type": "name",
-      "name": "name",
-      "placeholder": "Enter Your Name",
-      "value": "",
-      "autofocus": "",
-      "required": ""
-    },
-    domProps: {
-      "value": (_vm.form.name)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.$set(_vm.form, "name", $event.target.value)
-      }
-    }
-  }) : _vm._e()]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
+  })]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
     staticClass: "row"
   }, [_vm._m(3), _vm._v("\n               \n              "), _c('b-form-checkbox', {
     staticClass: "col col-md-9",
@@ -4879,11 +4854,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "row"
   }, [_vm._m(4), _vm._v("\n               \n              "), _c('div', {
     staticClass: "form-group col col-9 datepicker"
-  }, [_c('b-form-datepicker', {
+  }, [_c('datepicker', {
+    staticClass: "form-control col col-9",
+    class: {
+      'is-invalid': _vm.submitted && _vm.$v.form.birthday.$error
+    },
     attrs: {
-      "placeholder": "Enter Your Birthday",
+      "minimumView": 'day',
+      "maximumView": 'year',
+      "initialView": 'year',
       "id": "birthday-datepicker",
-      "required": ""
+      "placeholder": "Date of Birth *",
+      "aria-required": "required"
     },
     model: {
       value: (_vm.form.birthday),
@@ -4892,7 +4874,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "form.birthday"
     }
-  })], 1)]), _vm._v(" "), _c('div', {
+  }, [(_vm.submitted && !_vm.$v.form.birthday.required) ? _c('div', {
+    staticClass: "invalid-feedback"
+  }, [_vm._v("\n                    Date Of Birth is required\n                  ")]) : _vm._e()])], 1)]), _vm._v(" "), _c('div', {
     staticClass: "row"
   }, [_vm._m(5), _vm._v("\n               \n              "), _c('div', {
     staticClass: "form-group col col-9"
@@ -4904,13 +4888,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "form.email"
     }],
     staticClass: "form-control",
+    class: {
+      'is-invalid': _vm.submitted && _vm.$v.form.email.$error
+    },
     attrs: {
       "placeholder": "Enter Your Email",
       "id": "email",
-      "type": "email",
-      "name": "email",
-      "value": "",
-      "autofocus": ""
+      "name": "email"
     },
     domProps: {
       "value": (_vm.form.email)
@@ -4921,7 +4905,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.$set(_vm.form, "email", $event.target.value)
       }
     }
-  })])]), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), (_vm.submitted && _vm.$v.form.email.$error) ? _c('div', {
+    staticClass: "invalid-feedback"
+  }, [(!_vm.$v.form.email.email) ? _c('span', [_vm._v("Email is invalid")]) : _vm._e()]) : _vm._e()])]), _vm._v(" "), _c('div', {
     staticClass: "row"
   }, [_vm._m(6), _vm._v("\n               \n              "), _c('div', {
     staticClass: "form-group col col-9"
@@ -4933,12 +4919,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "form.password"
     }],
     staticClass: "form-control",
+    class: {
+      'is-invalid': _vm.submitted && _vm.$v.form.password.$error
+    },
     attrs: {
       "placeholder": "Enter Your PIN",
       "id": "password",
       "type": "password",
-      "name": "password",
-      "required": ""
+      "name": "password"
     },
     domProps: {
       "value": (_vm.form.password)
@@ -4949,9 +4937,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.$set(_vm.form, "password", $event.target.value)
       }
     }
-  })])]), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), (_vm.submitted && _vm.$v.form.password.$error) ? _c('div', {
+    staticClass: "invalid-feedback"
+  }, [(!_vm.$v.form.password.required) ? _c('span', [_vm._v("PIN is required")]) : _vm._e(), _vm._v(" "), (!_vm.$v.form.password.maxLength) ? _c('span', [_vm._v("PIN must max 4 integer")]) : _vm._e(), _vm._v(" "), (!_vm.$v.form.password.integer) ? _c('span', [_vm._v("PIN must integer")]) : _vm._e()]) : _vm._e()])]), _vm._v(" "), _c('div', {
     staticClass: "row"
-  }, [_vm._m(7), _vm._v("\n                 \n              "), _c('div', {
+  }, [_vm._m(7), _vm._v("\n               \n              "), _c('div', {
     staticClass: "form-group col col-9"
   }, [_c('input', {
     directives: [{
@@ -4965,8 +4955,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "placeholder": "Enter Your zipCode",
       "id": "zipCode",
       "type": "text",
-      "name": "zipCode",
-      "required": ""
+      "name": "zipCode"
     },
     domProps: {
       "value": (_vm.form.zipCode)
@@ -4997,7 +4986,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('img', {
     attrs: {
       "src": "https://cdn.jsdelivr.net/gh/amiraelsayed/covid19/img/about/pin.png",
-      "width": "100"
+      "width": "50"
     }
   }), _vm._v(" "), _c('p', [_vm._v("\n              Register and chose 4 digits PIN .You will use it when you log in\n              Please keep your PIN secure\n            ")])])]), _vm._v(" "), _c('div', {
     staticClass: "col-xl-4 col-md-4"
@@ -5006,7 +4995,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('img', {
     attrs: {
       "src": "https://cdn.jsdelivr.net/gh/amiraelsayed/covid19/img/about/anonymous.png",
-      "width": "100"
+      "width": "50"
     }
   }), _vm._v(" "), _c('p', [_vm._v("\n              For your privacy your name and email address are optional\n            ")]), _vm._v(" "), _c('br'), _vm._v(" "), _c('br')])]), _vm._v(" "), _c('div', {
     staticClass: "col-xl-4 col-md-4"
@@ -5015,7 +5004,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('img', {
     attrs: {
       "src": "https://cdn.jsdelivr.net/gh/amiraelsayed/covid19/img/about/united.png",
-      "width": "100"
+      "width": "50"
     }
   }), _vm._v(" "), _c('p', [_vm._v("\n              3 different people may register with the same mobile phone\n              number\n            ")])])])])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -5079,7 +5068,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 412 */
+
+/***/ 414:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -5087,7 +5077,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 413 */
+
+/***/ 415:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -5210,7 +5201,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 414 */
+
+/***/ 416:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -5334,12 +5326,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 415 */
+
+/***/ 417:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('div', {
-    staticClass: "header-area "
+    staticClass: "header-area"
   }, [_vm._m(0), _vm._v(" "), _c('div', {
     staticClass: "main-header-area",
     attrs: {
@@ -5352,7 +5345,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._m(1), _vm._v(" "), _c('div', {
     staticClass: "col-md-7"
   }, [_c('div', {
-    staticClass: "main-menu  d-none d-lg-block"
+    staticClass: "main-menu d-none d-lg-block"
   }, [_c('nav', [_c('ul', {
     attrs: {
       "id": "navigation"
@@ -5371,14 +5364,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('router-link', {
     staticClass: "btn btn-warning",
     attrs: {
-      "to": "register"
+      "to": "/register"
     }
   }, [_vm._v("Register")])], 1), _vm._v("\n                 \n                "), _c('div', {
     staticClass: "book_btn d-none d-lg-block"
   }, [_c('router-link', {
     staticClass: "btn btn-info",
     attrs: {
-      "to": "login"
+      "to": "/login"
     }
   }, [_vm._v("Login")])], 1)])]), _vm._v(" "), _vm._m(3)])])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -5389,12 +5382,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "row"
   }, [_c('div', {
-    staticClass: "col-xl-6 col-md-6 "
+    staticClass: "col-xl-6 col-md-6"
   }, [_c('div', {
     staticClass: "social_media_links"
   }, [_c('span', {
     staticClass: "share"
-  }, [_vm._v("Share with your family and friends  ")]), _vm._v(" "), _c('a', {
+  }, [_c('strong', [_vm._v("Share with your family and friends  ")])]), _vm._v(" "), _c('a', {
     attrs: {
       "href": "http://www.linkedin.com/shareArticle?mini=true&url=https://cv19.app/&src=sdkpreparse",
       "target": "popup",
@@ -5412,29 +5405,41 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "fa fa-facebook"
   })]), _vm._v(" "), _c('a', {
     attrs: {
-      "href": "https://plus.google.com/share?url=https://cv19.app/&src=sdkpreparse",
+      "href": "http://twitter.com/share?url=https://cv19.app/&src=sdkpreparse",
       "target": "popup",
-      "onclick": "window.open('https://plus.google.com/share?url=https://cv19.app/&src=sdkpreparse','popup','width=600,height=600'); return false;"
+      "onclick": "window.open('http://twitter.com/share?url=https://cv19.app/&src=sdkpreparse','popup','width=600,height=600,top=200,left=0'); return false;"
     }
   }, [_c('i', {
-    staticClass: "fa fa-google-plus"
+    staticClass: "fa fa-twitter"
+  })]), _vm._v(" "), _c('a', {
+    attrs: {
+      "href": "mailto:?subject=I wanted you to see this site&body=Check out this site https://cv19.app/&src=sdkpreparse",
+      "title": "Share by Email"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-envelope-o"
   })])])]), _vm._v(" "), _c('div', {
     staticClass: "col-xl-6 col-md-6"
   }, [_c('div', {
     staticClass: "short_contact_list"
   }, [_c('ul', [_c('li', [_c('a', {
+    staticClass: "share",
     attrs: {
       "href": "#"
     }
+  }, [_c('strong', {
+    staticClass: "share"
   }, [_c('i', {
     staticClass: "fa fa-envelope"
-  }), _vm._v(" info@ensofia.com")])]), _vm._v(" "), _c('li', [_c('a', {
+  }), _vm._v(" info@ensofia.com")])])]), _vm._v(" "), _c('li', [_c('a', {
     attrs: {
       "href": "#"
     }
-  }, [_vm._v("Take survey dial "), _c('i', {
+  }, [_c('strong', {
+    staticClass: "share"
+  }, [_vm._v(" Hotline")]), _vm._v(" "), _c('i', {
     staticClass: "fa fa-phone"
-  }), _vm._v(" (408)\n                      413-4555")])])])])])])])])
+  }), _vm._v(" "), _c('strong', [_vm._v("\n                        (408) 413-4555\n                      ")])])])])])])])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "col-md-2"
@@ -5446,7 +5451,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('img', {
     attrs: {
-      "src": "https://cdn.jsdelivr.net/gh/amiraelsayed/covid19/img/CV19.APP.png",
+      "src": "https://cdn.jsdelivr.net/gh/amiraelsayed/covid19/img/CV19.APP2.png",
       "alt": "",
       "width": "250"
     }
@@ -5468,7 +5473,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 416 */
+
+/***/ 418:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -5486,7 +5492,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 417 */
+
+/***/ 419:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -5686,7 +5693,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 418 */
+
+/***/ 420:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -5737,10 +5745,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "form.phone"
     }
   }, 'vue-tel-input', _vm.bindProps, false))], 1)]), _vm._v(" "), _c('div', {
-    attrs: {
-      "id": "recaptcha-container"
-    }
-  }), _vm._v(" "), _c('div', {
     staticClass: "form-group"
   }, [_c('div', {
     staticClass: "row"
@@ -5803,12 +5807,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.verifyOtp
     }
-  }, [_vm._v("Verify")]) : _vm._e(), _vm._v(" "), (_vm.haveCode) ? _c('button', {
+  }, [_vm._v("\n              Verify\n            ")]) : _vm._e(), _vm._v(" "), (_vm.haveCode) ? _c('button', {
     staticClass: "btn btn-info btn-sm",
     on: {
       "click": _vm.login2
     }
-  }, [_vm._v("Verify")]) : _vm._e()]) : _vm._e()])])])]), _vm._v(" "), _c('br'), _c('br')])
+  }, [_vm._v("\n              Verify\n            ")]) : _vm._e()]) : _vm._e()])])])]), _vm._v(" "), _c('br'), _c('br')])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "service_area"
@@ -5823,27 +5827,27 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('img', {
     attrs: {
       "src": "https://cdn.jsdelivr.net/gh/amiraelsayed/covid19/img/about/phone.png",
-      "width": "100"
+      "width": "50"
     }
-  }), _vm._v(" "), _c('p', [_vm._v("\n                Log in to retrieve your personalized report, verification code will received via mobile, keep it secure\n              ")])])]), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _c('p', [_vm._v("\n              Log in to retrieve your personalized report, verification code\n              will received via mobile, keep it secure\n            ")])])]), _vm._v(" "), _c('div', {
     staticClass: "col-xl-4 col-md-4"
   }, [_c('div', {
     staticClass: "single_service"
   }, [_c('img', {
     attrs: {
       "src": "https://cdn.jsdelivr.net/gh/amiraelsayed/covid19/img/about/survay.png",
-      "width": "100"
+      "width": "50"
     }
-  }), _vm._v(" "), _c('p', [_vm._v("\n                Complete the screening questionnaire\n              ")]), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _c('br')])]), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _c('p', [_vm._v("\n              Complete the screening questionnaire\n            ")]), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _c('br')])]), _vm._v(" "), _c('div', {
     staticClass: "col-xl-4 col-md-4"
   }, [_c('div', {
     staticClass: "single_service"
   }, [_c('img', {
     attrs: {
       "src": "https://cdn.jsdelivr.net/gh/amiraelsayed/covid19/img/about/report.png",
-      "width": "100"
+      "width": "50"
     }
-  }), _vm._v(" "), _c('p', [_vm._v("\n                The personalized report will include assessment against the CDC guidelnes and relevant CDC information\n              ")])])])])])])
+  }), _vm._v(" "), _c('p', [_vm._v("\n              The personalized report will include assessment against the CDC\n              guidelnes and relevant CDC information\n            ")])])])])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('label', {
     staticClass: "col col-2",
@@ -5866,11 +5870,101 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "submit"
     }
-  }, [_vm._v("Login")])])
+  }, [_vm._v("\n                Login\n              ")])])
 }]}
 
 /***/ }),
-/* 419 */
+
+/***/ 421:
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticStyle: {
+      "background": "#3498DB"
+    }
+  }, [_c('br'), _c('br'), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "container"
+  }, [_c('div', {
+    staticClass: "large_padding",
+    staticStyle: {
+      "background": "#ffffffdd"
+    }
+  }, [_c('h1', [_vm._v("\n        This screening is for you, if you:\n      ")]), _vm._v(" "), _c('br'), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('br'), _c('br'), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('br'), _c('br'), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('br'), _c('br'), _vm._v(" "), _c('router-link', {
+    staticClass: "boxed-btn3 large_margin",
+    attrs: {
+      "to": "/register"
+    }
+  }, [_vm._v(">> I Agree on the above discaimer")])], 1)]), _vm._v(" "), _c('br'), _c('br')])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "row justify-content-center"
+  }, [_c('img', {
+    attrs: {
+      "src": "https://cdn.jsdelivr.net/gh/amiraelsayed/covid19/img/about/disclamer.png"
+    }
+  })])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "row"
+  }, [_c('img', {
+    attrs: {
+      "width": "100",
+      "height": "100",
+      "src": "https://cdn.jsdelivr.net/gh/amiraelsayed/covid19/img/about/emergency.png"
+    }
+  }), _vm._v(" "), _c('div', {
+    staticClass: "col col-9"
+  }, [_c('p', [_c('strong', [_vm._v("Do not need immediate medical attention")])]), _vm._v(" "), _c('p', {
+    staticStyle: {
+      "color": "#787878"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "font-weight": "400"
+    }
+  }, [_vm._v("This program is intended to expand access to COVID-19 risk\n              screening and testing. It is not intended for people\n              experiencing")]), _vm._v(" "), _c('strong', [_vm._v("severe")]), _vm._v(" "), _c('span', {
+    staticStyle: {
+      "font-weight": "400"
+    }
+  }, [_vm._v("symptoms such as severe cough, severe shortness of breath,\n              severe fever, or other concerning symptoms who may need more\n              immediate medical care.")]), _vm._v(" "), _c('a', {
+    attrs: {
+      "href": "https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Fsteps-when-sick.html"
+    }
+  }, [_c('strong', [_vm._v("Please visit the CDC website")])]), _vm._v(" "), _c('span', {
+    staticStyle: {
+      "font-weight": "400"
+    }
+  }, [_vm._v("for information on what to do if you are sick.")])])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "row"
+  }, [_c('img', {
+    attrs: {
+      "width": "100",
+      "height": "100",
+      "src": "https://cdn.jsdelivr.net/gh/amiraelsayed/covid19/img/about/age.png"
+    }
+  }), _vm._v(" "), _c('div', {
+    staticClass: "col col-9"
+  }, [_c('p', [_c('strong', [_vm._v("Are")]), _vm._v(" "), _c('strong', [_vm._v("18 years old or older")])]), _vm._v(" "), _c('p', [_vm._v("\n            San Jose (Santa Clara county), Lake Elsinore (Riverside county),\n            San Mateo (San Mateo county), and Sacramento (Sacramento county)\n          ")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "row"
+  }, [_c('img', {
+    attrs: {
+      "width": "100",
+      "height": "100",
+      "src": "https://cdn.jsdelivr.net/gh/amiraelsayed/covid19/img/about/map.png"
+    }
+  }), _vm._v(" "), _c('div', {
+    staticClass: "col col-9"
+  }, [_c('p', [_c('strong', [_vm._v("Are located within range of a testing site")])]), _vm._v(" "), _c('p', [_vm._v("\n            San Jose (Santa Clara county), Lake Elsinore (Riverside county),\n            San Mateo (San Mateo county), and Sacramento (Sacramento county)\n          ")])])])
+}]}
+
+/***/ }),
+
+/***/ 422:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -5907,7 +6001,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 420 */
+
+/***/ 423:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -5959,7 +6054,35 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "amira_margin"
   }, [_vm._v(_vm._s(_vm.advices[3].key))]), _vm._v(" "), _c('br'), _vm._v(" "), _c('p', {
     staticClass: "amira_margin"
-  }, [_vm._v(_vm._s(_vm.advices[3].short))]), _vm._v(" "), _c('br'), _vm._v(" "), _vm._m(8)])])])])])])])]), _vm._v(" "), _vm._m(9), _vm._v(" "), _vm._m(10)])
+  }, [_vm._v(_vm._s(_vm.advices[3].short))]), _vm._v(" "), _c('br'), _vm._v(" "), _vm._m(8)])])])])])])])]), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "background": "#000"
+    }
+  }, [_c('div', {
+    staticClass: "copy-right_text"
+  }, [_c('div', {
+    staticClass: "container"
+  }, [_c('div', {
+    staticClass: "footer_border"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-xl-12"
+  }, [_c('br'), _vm._v(" "), _c('p', {
+    staticClass: "copy_right text-center"
+  }, [_vm._v("\n              Copyright © @2020 All rights reserved | Ensofia Team\n              "), _c('br'), _vm._v(" "), _c('font', {
+    attrs: {
+      "color": "#000"
+    }
+  }, [_vm._v("\n                This template is made with by\n                "), _c('a', {
+    staticStyle: {
+      "color": "black"
+    },
+    attrs: {
+      "href": "https://colorlib.com",
+      "target": "_blank"
+    }
+  }, [_vm._v("Colorlib")])])], 1), _vm._v(" "), _c('br')])])])])]), _vm._v(" "), _vm._m(9)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "row"
@@ -5967,7 +6090,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "col-xl-12"
   }, [_c('div', {
     staticClass: "doctors_title mb-55"
-  }, [_c('h3', [_vm._v("A Word for YOU")])])])])
+  }, [_c('h3', [_vm._v("A Word for You")])])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "expert_thumb"
@@ -6057,34 +6180,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("More")])])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticStyle: {
-      "background": "#000"
-    }
-  }, [_c('div', {
-    staticClass: "copy-right_text"
-  }, [_c('div', {
-    staticClass: "container"
-  }, [_c('div', {
-    staticClass: "footer_border"
-  }), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-xl-12"
-  }, [_c('br'), _vm._v(" "), _c('p', {
-    staticClass: "copy_right text-center"
-  }, [_vm._v("\n            Copyright © @2020\n            All rights reserved | This template is made with\n            "), _c('i', {
-    staticClass: "fa fa-heart-o",
-    attrs: {
-      "aria-hidden": "true"
-    }
-  }), _vm._v(" by\n            "), _c('a', {
-    attrs: {
-      "href": "https://colorlib.com",
-      "target": "_blank"
-    }
-  }, [_vm._v("Colorlib")])]), _vm._v(" "), _c('br')])])])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('form', {
     staticClass: "white-popup-block mfp-hide",
     attrs: {
@@ -6104,7 +6199,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 421 */
+
+/***/ 424:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -6169,7 +6265,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 422 */
+
+/***/ 425:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -6198,89 +6295,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 423 */
-/***/ (function(module, exports) {
 
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticStyle: {
-      "background": "#3498DB"
-    }
-  }, [_c('br'), _c('br'), _vm._v(" "), _c('div', {
-    staticClass: "row justify-content-center"
-  }, [_c('img', {
-    attrs: {
-      "src": "https://cdn.jsdelivr.net/gh/amiraelsayed/covid19/img/about/disclamer.png"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "container"
-  }, [_c('div', {
-    staticClass: "large_padding",
-    staticStyle: {
-      "background": "#ffffffdd"
-    }
-  }, [_c('h1', [_vm._v("\n          This screening is for you, if you:\n        ")]), _vm._v(" "), _c('br'), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('img', {
-    attrs: {
-      "width": "100",
-      "height": "100",
-      "src": "https://cdn.jsdelivr.net/gh/amiraelsayed/covid19/img/about/emergency.png"
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "col col-9"
-  }, [_c('p', [_c('strong', [_vm._v("Do not need immediate medical attention")])]), _vm._v(" "), _c('p', {
-    staticStyle: {
-      "color": "#787878"
-    }
-  }, [_c('span', {
-    staticStyle: {
-      "font-weight": "400"
-    }
-  }, [_vm._v("This program is intended to expand access to COVID-19 risk\n                screening and testing. It is not intended for people\n                experiencing")]), _vm._v(" "), _c('strong', [_vm._v("severe")]), _vm._v(" "), _c('span', {
-    staticStyle: {
-      "font-weight": "400"
-    }
-  }, [_vm._v("symptoms such as severe cough, severe shortness of breath,\n                severe fever, or other concerning symptoms who may need more\n                immediate medical care.")]), _vm._v(" "), _c('a', {
-    attrs: {
-      "href": "https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Fsteps-when-sick.html"
-    }
-  }, [_c('strong', [_vm._v("Please visit the CDC website")])]), _vm._v(" "), _c('span', {
-    staticStyle: {
-      "font-weight": "400"
-    }
-  }, [_vm._v("for information on what to do if you are sick.")])])])]), _vm._v(" "), _c('br'), _c('br'), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('img', {
-    attrs: {
-      "width": "100",
-      "height": "100",
-      "src": "https://cdn.jsdelivr.net/gh/amiraelsayed/covid19/img/about/age.png"
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "col col-9"
-  }, [_c('p', [_c('strong', [_vm._v("Are")]), _vm._v(" "), _c('strong', [_vm._v("18 years old or older")])]), _vm._v(" "), _c('p', [_vm._v("\n              San Jose (Santa Clara county), Lake Elsinore (Riverside county),\n              San Mateo (San Mateo county), and Sacramento (Sacramento county)\n            ")])])]), _vm._v(" "), _c('br'), _c('br'), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('img', {
-    attrs: {
-      "width": "100",
-      "height": "100",
-      "src": "https://cdn.jsdelivr.net/gh/amiraelsayed/covid19/img/about/map.png"
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "col col-9"
-  }, [_c('p', [_c('strong', [_vm._v("Are located within range of a testing site")])]), _vm._v(" "), _c('p', [_vm._v("\n              San Jose (Santa Clara county), Lake Elsinore (Riverside county),\n              San Mateo (San Mateo county), and Sacramento (Sacramento county)\n            ")])])]), _vm._v(" "), _c('br'), _c('br'), _vm._v(" "), _c('button', {
-    staticClass: "boxed-btn3 large_margin",
-    attrs: {
-      "type": "submit"
-    }
-  }, [_vm._v("I Agree on the above Discaimer")])])]), _vm._v(" "), _c('br'), _c('br')])
-}]}
-
-/***/ }),
-/* 424 */
+/***/ 426:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -6305,7 +6321,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 425 */
+
+/***/ 427:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -6449,7 +6466,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 426 */
+
+/***/ 428:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -6461,7 +6479,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 427 */
+
+/***/ 429:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -6559,7 +6578,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 428 */
+
+/***/ 430:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -6648,7 +6668,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 429 */
+
+/***/ 431:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -6660,7 +6681,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 430 */
+
+/***/ 432:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -6668,21 +6690,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "all-clinic"
     }
-  }, [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('router-link', {
-    staticClass: "btn btn-primary float-right",
-    attrs: {
-      "to": {
-        name: 'AllClinic'
-      }
-    }
-  }, [_vm._v("All Clinic")])], 1)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  }, [_c('div', {
     staticClass: "slider_area"
   }, [_c('div', {
     staticClass: "slider_active owl-carousel"
   }, [_c('div', {
-    staticClass: "single_slider  d-flex align-items-center amira_bg_3"
+    staticClass: "single_slider d-flex align-items-center amira_bg_3"
   }, [_c('div', {
     staticClass: "container"
   }, [_c('div', {
@@ -6690,14 +6703,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "col-xl-12"
   }, [_c('div', {
-    staticClass: "slider_text "
-  }, [_c('h3', [_c('span', [_vm._v("Take the survay ..")]), _vm._v(" "), _c('br'), _vm._v("Increase your\n                  awareness\n                ")]), _vm._v(" "), _c('p', [_vm._v("\n                  The first step to defeat any epidemic is to learn "), _c('br'), _vm._v("\n                  This website is built to increase awareness and share\n                  information"), _c('br'), _vm._v("\n                  published by the US – Centers for Disease Control and\n                  Prevention CDC.gov.\n                ")]), _vm._v(" "), _c('a', {
+    staticClass: "slider_text"
+  }, [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('router-link', {
     staticClass: "boxed-btn3",
     attrs: {
-      "href": "#"
+      "to": "/disclamer"
     }
-  }, [_vm._v("Answer NOW")])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "single_slider  d-flex align-items-center amira_bg_1"
+  }, [_vm._v("Start Screening NOW")]), _vm._v(" "), _c('a', {
+    staticClass: "boxed-btn3",
+    attrs: {
+      "href": "tel: +14084134555"
+    }
+  }, [_vm._v("Hotline")])], 1)])])])]), _vm._v(" "), _c('div', {
+    staticClass: "single_slider d-flex align-items-center amira_bg_1"
   }, [_c('div', {
     staticClass: "container"
   }, [_c('div', {
@@ -6705,9 +6723,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "col-xl-12"
   }, [_c('div', {
-    staticClass: "slider_text "
-  }, [_c('h3', [_c('span', [_vm._v("Stay Home ..")]), _c('br'), _vm._v("Stay Safe")]), _vm._v(" "), _c('p', [_vm._v("Keep calm and carry on "), _c('br')])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "single_slider  d-flex align-items-center amira_bg_2"
+    staticClass: "slider_text"
+  }, [_vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('router-link', {
+    staticClass: "boxed-btn3",
+    attrs: {
+      "to": "/disclamer"
+    }
+  }, [_vm._v("Start Screening NOW")]), _vm._v(" "), _c('a', {
+    staticClass: "boxed-btn3",
+    attrs: {
+      "href": "tel: +14084134555"
+    }
+  }, [_vm._v("Hotline")])], 1)])])])]), _vm._v(" "), _c('div', {
+    staticClass: "single_slider d-flex align-items-center amira_bg_2"
   }, [_c('div', {
     staticClass: "container"
   }, [_c('div', {
@@ -6715,16 +6743,47 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "col-xl-12"
   }, [_c('div', {
-    staticClass: "slider_text "
-  }, [_c('h3', [_c('span', [_vm._v("Ensofia is here ..")]), _c('br'), _vm._v("To help you")]), _vm._v(" "), _c('p', [_vm._v("\n                  This is our humble effort to contribute and help the public\n                  "), _c('br'), _vm._v("\n                  to aid the tremendousefforts and steps taken by many\n                  organizations "), _c('br'), _vm._v("\n                  to flatten the curve.\n                ")])])])])])])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+    staticClass: "slider_text"
+  }, [_vm._m(4), _vm._v(" "), _vm._m(5), _vm._v(" "), _c('router-link', {
+    staticClass: "boxed-btn3",
+    attrs: {
+      "to": "/disclamer"
+    }
+  }, [_vm._v("Start Screening NOW")]), _vm._v(" "), _c('a', {
+    staticClass: "boxed-btn3",
+    attrs: {
+      "href": "tel: +14084134555"
+    }
+  }, [_vm._v("Hotline")])], 1)])])])])])]), _vm._v(" "), _c('div', {
     staticClass: "service_area"
   }, [_c('div', {
     staticClass: "container p-0"
   }, [_c('div', {
     staticClass: "row no-gutters"
+  }, [_vm._m(6), _vm._v(" "), _vm._m(7), _vm._v(" "), _c('div', {
+    staticClass: "col-xl-4 col-md-4"
   }, [_c('div', {
+    staticClass: "single_service"
+  }, [_vm._m(8), _vm._v(" "), _c('h3', [_vm._v("What it is")]), _vm._v(" "), _c('p', [_vm._v("\n              What it is This tool may help you understand what to do next\n              about COVID-19. You’ll answer a few questions about symptoms,\n              and contact you’ve had with others. You will get a report based\n              on CDC guidelines for your answers Your privacy is extremely\n              important to us, your name and email are optional\n              Recommendations provided by this tool do not constitute medical\n              advice and should not be used to diagnose or treat medical\n              conditions.\n            ")]), _vm._v(" "), _c('router-link', {
+    staticClass: "boxed-btn3-white",
+    attrs: {
+      "to": "/disclamer"
+    }
+  }, [_vm._v("Start Screening NOW")])], 1)])])])]), _vm._v(" "), _vm._m(9)])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('h3', [_c('span', [_vm._v("Take the survay ..")]), _vm._v(" "), _c('br'), _vm._v("Increase your awareness\n                ")])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('p', [_vm._v("\n                  The first step to defeat a pandemic is awareness and\n                  learning. "), _c('br'), _vm._v("\n                  This tool is built to increase awareness and share\n                  information\n                  "), _c('br'), _vm._v("\n                  which is published by the US Centers for Disease Control and\n                  Prevention. "), _c('br'), _vm._v("\n                  Visit CDC.gov for up to date information\n                ")])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('h3', [_c('span', [_vm._v("Stay Home ..")]), _vm._v(" "), _c('br'), _vm._v("Stay Safe\n                ")])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('p', [_vm._v("\n                  Let’s all help each other.\n                  "), _c('br'), _vm._v("Reserving care for those in need. "), _c('br'), _vm._v("\n                  Take the self assessment, call you doctor, "), _c('br'), _vm._v("or health\n                  provider look for guidelines from CDC.gov\n                ")])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('h3', [_c('span', [_vm._v("EnSofia is here ..")]), _vm._v(" "), _c('br'), _vm._v("To help you\n                ")])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('p', [_vm._v("\n                  This website is made by team EnSofia. "), _c('br'), _vm._v("It is our humble\n                  effort to contribute to the community and help the public,\n                  "), _c('br'), _vm._v("\n                  the health care providers and healthcare systems. "), _c('br'), _vm._v("\n                  It is based on CDC guildlines. "), _c('br'), _vm._v("Always refer to CDC.gov\n                  for more information\n                ")])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "col-xl-4 col-md-4"
   }, [_c('div', {
     staticClass: "single_service"
@@ -6732,12 +6791,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "icon"
   }, [_c('i', {
     staticClass: "flaticon-electrocardiogram"
-  })]), _vm._v(" "), _c('h3', [_vm._v("AI Agent")]), _vm._v(" "), _c('p', [_vm._v("\n              This website is made by team Ensofia. It's our humble effort to\n              contribute to community and help the public and the health care\n              providers and systems\n            ")]), _vm._v(" "), _c('a', {
+  })]), _vm._v(" "), _c('h3', [_vm._v("Made By")]), _vm._v(" "), _c('p', [_vm._v("\n              This website is made by team Ensofia. It's our humble effort to\n              contribute to community and help the public and the health care\n              providers and systems\n              "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br')]), _vm._v(" "), _c('a', {
     staticClass: "boxed-btn3-white",
     attrs: {
-      "href": "https://ensofia.com/contact.html"
+      "href": "https://ensofia.com/contact.html",
+      "target": "blank"
     }
-  }, [_vm._v("Ensofia")])])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("Contact EnSofia")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "col-xl-4 col-md-4"
   }, [_c('div', {
     staticClass: "single_service"
@@ -6745,29 +6807,63 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "icon"
   }, [_c('i', {
     staticClass: "flaticon-emergency-call"
-  })]), _vm._v(" "), _c('h3', [_vm._v("Emergency Care")]), _vm._v(" "), _c('p', [_vm._v("\n              This is not diagnostic or medical site. You should not use this\n              website orthe personalized report for any medical device. If you\n              have medical questions, contact your doctor. If you have an\n              emergency call 911.\n            ")]), _vm._v(" "), _c('a', {
+  })]), _vm._v(" "), _c('h3', [_vm._v("What it is Not")]), _vm._v(" "), _c('p', [_vm._v("\n              This web site is "), _c('strong', [_vm._v("NOT")]), _vm._v(" diagnostic or medical\n              site. You should "), _c('strong', [_vm._v("NOT")]), _vm._v(" use this website or the\n              personalized report for any medical advice. It is\n              "), _c('strong', [_vm._v("NOT")]), _vm._v(" intended for people experiencing severe\n              symptoms. If you have medical questions, contact your doctor. If\n              you have an emergency call 911.\n              "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br')]), _vm._v(" "), _c('a', {
     staticClass: "boxed-btn3-white",
     attrs: {
-      "href": "#"
+      "href": "tel: +14084134555"
     }
-  }, [_vm._v("+(408) 413-4555")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-xl-4 col-md-4"
-  }, [_c('div', {
-    staticClass: "single_service"
-  }, [_c('div', {
+  }, [_vm._v("+(408) 413-4555")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "icon"
   }, [_c('i', {
     staticClass: "flaticon-first-aid-kit"
-  })]), _vm._v(" "), _c('h3', [_vm._v("Prevention actions")]), _vm._v(" "), _c('p', [_vm._v("\n              This website is application is built for awareness and sharing\n              information published by the US – Centers for Disease Control\n              and Prevention CDC.gov\n            ")]), _vm._v(" "), _c('a', {
-    staticClass: "boxed-btn3-white",
-    attrs: {
-      "href": "#"
+  })])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticStyle: {
+      "background": "#fff"
     }
-  }, [_vm._v("Ream More ..")])])])])])])
+  }, [_c('br'), _c('br'), _vm._v(" "), _c('div', {
+    staticClass: "row justify-content-center"
+  }, [_c('div', {
+    attrs: {
+      "id": "circle1"
+    }
+  }, [_vm._v("\n        1\n      ")]), _vm._v(" "), _c('div', {
+    attrs: {
+      "id": "pointer1"
+    }
+  }, [_c('p', [_vm._v("Register, Keep you PIN")])]), _vm._v("\n        \n      "), _c('div', {
+    attrs: {
+      "id": "circle1"
+    }
+  }, [_vm._v("\n        2\n      ")]), _vm._v(" "), _c('div', {
+    attrs: {
+      "id": "pointer2"
+    }
+  }, [_c('p', [_vm._v("Take self assessment")])]), _vm._v("\n        \n      "), _c('div', {
+    attrs: {
+      "id": "circle1"
+    }
+  }, [_vm._v("\n        3\n      ")]), _vm._v(" "), _c('div', {
+    attrs: {
+      "id": "pointer3"
+    }
+  }, [_c('p', [_vm._v("Get Verification code")])]), _vm._v("\n        \n      "), _c('div', {
+    attrs: {
+      "id": "circle1"
+    }
+  }, [_vm._v("\n        4\n      ")]), _vm._v(" "), _c('div', {
+    attrs: {
+      "id": "pointer4"
+    }
+  }, [_c('p', [_vm._v("Download your report")])])])])
 }]}
 
 /***/ }),
-/* 431 */
+
+/***/ 433:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -6794,7 +6890,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 432 */
+
+/***/ 434:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -6823,7 +6920,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 433 */
+
+/***/ 435:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -6839,14 +6937,86 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 434 */,
-/* 435 */,
-/* 436 */,
-/* 437 */
+
+/***/ 465:
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
+/***/ }),
+
+/***/ 53:
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(11)(
+  /* script */
+  __webpack_require__(326),
+  /* template */
+  __webpack_require__(435),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 54:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(38);
+
+
+
+__WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_1_vuex__["b" /* default */]);
+
+/* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vuex__["b" /* default */].Store({
+  state: {
+    user: {
+      loggedIn: false,
+      data: null
+    }
+  },
+
+  getters: {
+    user(state) {
+      return state.user;
+    }
+  },
+  mutations: {
+    SET_LOGGED_IN(state, value) {
+      state.user.loggedIn = value;
+    },
+    SET_USER(state, data) {
+      state.user.data = data;
+    }
+  },
+  actions: {
+    fetchUser({ commit }, user) {
+      commit("SET_LOGGED_IN", user !== null);
+
+      if (user) {
+        commit("SET_USER", {
+          displayName: user.name,
+          email: user.email,
+          user_id: user.id,
+          phone: user.phone,
+          birthday: user.birthday,
+          answer: user.answer
+        });
+      } else {
+        commit("SET_USER", null);
+      }
+    }
+  }
+}));
+
 /***/ })
-],[333]);
-//# sourceMappingURL=app.fa4d2cc364322c7ea6b1.js.map
+
+},[333]);
+//# sourceMappingURL=app.5de082dde6c0042b172d.js.map

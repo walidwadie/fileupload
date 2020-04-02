@@ -735,9 +735,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
 
 // import Punny from './Punny';
 
@@ -6754,22 +6751,22 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "href": "tel: +14084134555"
     }
-  }, [_vm._v("Hotline")])], 1)])])])])])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("Hotline")])], 1)])])])])])]), _vm._v(" "), _vm._m(6), _vm._v(" "), _c('div', {
     staticClass: "service_area"
   }, [_c('div', {
     staticClass: "container p-0"
   }, [_c('div', {
     staticClass: "row no-gutters"
-  }, [_vm._m(6), _vm._v(" "), _vm._m(7), _vm._v(" "), _c('div', {
+  }, [_vm._m(7), _vm._v(" "), _vm._m(8), _vm._v(" "), _c('div', {
     staticClass: "col-xl-4 col-md-4"
   }, [_c('div', {
     staticClass: "single_service"
-  }, [_vm._m(8), _vm._v(" "), _c('h3', [_vm._v("What it is")]), _vm._v(" "), _c('p', [_vm._v("\n              What it is This tool may help you understand what to do next\n              about COVID-19. You’ll answer a few questions about symptoms,\n              and contact you’ve had with others. You will get a report based\n              on CDC guidelines for your answers Your privacy is extremely\n              important to us, your name and email are optional\n              Recommendations provided by this tool do not constitute medical\n              advice and should not be used to diagnose or treat medical\n              conditions.\n            ")]), _vm._v(" "), _c('router-link', {
+  }, [_vm._m(9), _vm._v(" "), _c('h3', [_vm._v("What it is")]), _vm._v(" "), _c('p', [_vm._v("\n              What it is This tool may help you understand what to do next\n              about COVID-19. Your privacy is extremely\n              important to us, your name and email are optional\n              Recommendations provided by this tool do not constitute medical\n              advice and should not be used to diagnose or treat medical\n              conditions.\n            ")]), _vm._v(" "), _c('router-link', {
     staticClass: "boxed-btn3-white",
     attrs: {
       "to": "/disclamer"
     }
-  }, [_vm._v("Start Screening NOW")])], 1)])])])]), _vm._v(" "), _vm._m(9)])
+  }, [_vm._v("Start Screening NOW")])], 1)])])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('h3', [_c('span', [_vm._v("Take the survay ..")]), _vm._v(" "), _c('br'), _vm._v("Increase your awareness\n                ")])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -6782,43 +6779,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('h3', [_c('span', [_vm._v("EnSofia is here ..")]), _vm._v(" "), _c('br'), _vm._v("To help you\n                ")])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('p', [_vm._v("\n                  This website is made by team EnSofia. "), _c('br'), _vm._v("It is our humble\n                  effort to contribute to the community and help the public,\n                  "), _c('br'), _vm._v("\n                  the health care providers and healthcare systems. "), _c('br'), _vm._v("\n                  It is based on CDC guildlines. "), _c('br'), _vm._v("Always refer to CDC.gov\n                  for more information\n                ")])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "col-xl-4 col-md-4"
-  }, [_c('div', {
-    staticClass: "single_service"
-  }, [_c('div', {
-    staticClass: "icon"
-  }, [_c('i', {
-    staticClass: "flaticon-electrocardiogram"
-  })]), _vm._v(" "), _c('h3', [_vm._v("Made By")]), _vm._v(" "), _c('p', [_vm._v("\n              This website is made by team Ensofia. It's our humble effort to\n              contribute to community and help the public and the health care\n              providers and systems\n              "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br')]), _vm._v(" "), _c('a', {
-    staticClass: "boxed-btn3-white",
-    attrs: {
-      "href": "https://ensofia.com/contact.html",
-      "target": "blank"
-    }
-  }, [_vm._v("Contact EnSofia")])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "col-xl-4 col-md-4"
-  }, [_c('div', {
-    staticClass: "single_service"
-  }, [_c('div', {
-    staticClass: "icon"
-  }, [_c('i', {
-    staticClass: "flaticon-emergency-call"
-  })]), _vm._v(" "), _c('h3', [_vm._v("What it is Not")]), _vm._v(" "), _c('p', [_vm._v("\n              This web site is "), _c('strong', [_vm._v("NOT")]), _vm._v(" diagnostic or medical\n              site. You should "), _c('strong', [_vm._v("NOT")]), _vm._v(" use this website or the\n              personalized report for any medical advice. It is\n              "), _c('strong', [_vm._v("NOT")]), _vm._v(" intended for people experiencing severe\n              symptoms. If you have medical questions, contact your doctor. If\n              you have an emergency call 911.\n              "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br')]), _vm._v(" "), _c('a', {
-    staticClass: "boxed-btn3-white",
-    attrs: {
-      "href": "tel: +14084134555"
-    }
-  }, [_vm._v("+(408) 413-4555")])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "icon"
-  }, [_c('i', {
-    staticClass: "flaticon-first-aid-kit"
-  })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticStyle: {
@@ -6850,7 +6810,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "pointer3"
     }
-  }, [_c('p', [_vm._v("Get Verification code")])]), _vm._v("\n        \n      "), _c('div', {
+  }, [_c('p', [_vm._v("Get verification code")])]), _vm._v("\n        \n      "), _c('div', {
     attrs: {
       "id": "circle1"
     }
@@ -6858,7 +6818,44 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "pointer4"
     }
-  }, [_c('p', [_vm._v("Download your report")])])])])
+  }, [_c('p', [_vm._v("Download your report")])])]), _vm._v(" "), _c('br'), _c('br')])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "col-xl-4 col-md-4"
+  }, [_c('div', {
+    staticClass: "single_service"
+  }, [_c('div', {
+    staticClass: "icon"
+  }, [_c('i', {
+    staticClass: "flaticon-electrocardiogram"
+  })]), _vm._v(" "), _c('h3', [_vm._v("Made By")]), _vm._v(" "), _c('p', [_vm._v("\n              This website is made by team Ensofia. It's our humble effort to\n              contribute to community and help the public and the health care\n              providers and systems\n              "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br')]), _vm._v(" "), _c('a', {
+    staticClass: "boxed-btn3-white",
+    attrs: {
+      "href": "https://ensofia.com/contact.html",
+      "target": "blank"
+    }
+  }, [_vm._v("Contact EnSofia")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "col-xl-4 col-md-4"
+  }, [_c('div', {
+    staticClass: "single_service"
+  }, [_c('div', {
+    staticClass: "icon"
+  }, [_c('i', {
+    staticClass: "flaticon-emergency-call"
+  })]), _vm._v(" "), _c('h3', [_vm._v("What it is Not")]), _vm._v(" "), _c('p', [_vm._v("\n              This web site is "), _c('strong', [_vm._v("NOT")]), _vm._v(" diagnostic or medical\n              site. You should "), _c('strong', [_vm._v("NOT")]), _vm._v(" use this website or the\n              personalized report for any medical advice. It is\n              "), _c('strong', [_vm._v("NOT")]), _vm._v(" intended for people experiencing severe\n              symptoms. If you have medical questions, contact your doctor. If\n              you have an emergency call 911.\n              \n              "), _c('br'), _vm._v(" "), _c('br')]), _vm._v(" "), _c('a', {
+    staticClass: "boxed-btn3-white",
+    attrs: {
+      "href": "tel: +14084134555"
+    }
+  }, [_vm._v("+(408) 413-4555")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "icon"
+  }, [_c('i', {
+    staticClass: "flaticon-first-aid-kit"
+  })])
 }]}
 
 /***/ }),
@@ -7019,4 +7016,4 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_1_vue
 /***/ })
 
 },[333]);
-//# sourceMappingURL=app.5de082dde6c0042b172d.js.map
+//# sourceMappingURL=app.6dbaad5c379b224c3b1c.js.map
